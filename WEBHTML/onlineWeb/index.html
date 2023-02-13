@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js no-svg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<script data-cfasync="false" data-no-defer="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script>				<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1547004834731{margin-top: -230px !important;margin-right: -20px !important;margin-left: -20px !important;padding-right: 114px !important;padding-bottom: 60px !important;padding-left: 114px !important;}.vc_custom_1546417125627{padding-bottom: 70px !important;}.vc_custom_1572030866160{padding-top: 85px !important;padding-bottom: 85px !important;background-image: url(https://criaderolusitania.com/wp-content/uploads/2019/10/cabaleriza.jpg?id=3013) !important;background-position: center;background-repeat: no-repeat;background-size: cover !important;}.vc_custom_1572556244824{padding-top: 66px !important;padding-bottom: 66px !important;}.vc_custom_1572303024501{padding-top: 30px !important;padding-bottom: 30px !important;}.vc_custom_1572030400300{padding-top: 65px !important;padding-bottom: 66px !important;}.vc_custom_1572030424781{margin-top: 0px !important;margin-bottom: -75px !important;border-top-width: 0px !important;border-bottom-width: 0px !important;padding-top: 60px !important;padding-bottom: 60px !important;background-image: url(https://criaderolusitania.com/wp-content/uploads/2019/10/wood-bg-2.jpg?id=2871) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1546417513305{padding-right: 20px !important;padding-left: 20px !important;}.vc_custom_1546417547146{padding-right: 20px !important;padding-left: 20px !important;}.vc_custom_1546417561406{padding-right: 20px !important;padding-left: 20px !important;}.vc_custom_1572031095410{margin-bottom: 55px !important;}.vc_custom_1571855601998{padding-right: 40px !important;padding-left: 40px !important;}.vc_custom_1571856766626{padding-top: 40px !important;}.vc_custom_1571933040756{padding-top: 40px !important;padding-bottom: 40px !important;}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!-- This site is optimized with the Yoast SEO plugin v19.5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Criadero la Victoria - Combita, Boyaca</title>
+<meta name="description" content="A solo 10 minutos de Tunja. Hemos obtenido los títulos mas importantes del caballo criollo colombiano. Saltos, Yeguas Donates, Financiación" />
+<link rel="canonical" href="https://criadero_la_victoria_.com/" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Criadero de Caballos Lusitania - El Rosal, Cundinamarca" />
+<meta property="og:description" content="A solo 90 minutos de Bogotá. Hemos obtenido los títulos mas importantes del caballo criollo colombiano. Saltos, Yeguas Donates, Financiación" />
+<meta property="og:url" content="https://criaderolusitania.com/" />
+<meta property="og:site_name" content="Criadero Lusitania" />
+<meta property="article:modified_time" content="2020-04-21T17:08:33+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:label1" content="Tiempo de lectura" />
+<meta name="twitter:data1" content="10 minutos" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://criaderolusitania.com/","url":"https://criaderolusitania.com/","name":"Criadero de Caballos Lusitania - El Rosal, Cundinamarca","isPartOf":{"@id":"https://criaderolusitania.com/#website"},"datePublished":"2019-10-26T05:09:43+00:00","dateModified":"2020-04-21T17:08:33+00:00","description":"A solo 90 minutos de Bogotá. Hemos obtenido los títulos mas importantes del caballo criollo colombiano. Saltos, Yeguas Donates, Financiación","breadcrumb":{"@id":"https://criaderolusitania.com/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://criaderolusitania.com/"]}]},{"@type":"BreadcrumbList","@id":"https://criaderolusitania.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada"}]},{"@type":"WebSite","@id":"https://criaderolusitania.com/#website","url":"https://criaderolusitania.com/","name":"Criadero Lusitania","description":"Nuestra Pasi&oacute;n Son los Caballos","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://criaderolusitania.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"}]}</script>
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Criadero Lusitania &raquo; Feed" href="https://criaderolusitania.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Criadero Lusitania &raquo; Feed de los comentarios" href="https://criaderolusitania.com/comments/feed/" />
+<!-- Simple Analytics by Theme Blvd -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-152861690-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/criaderolusitania.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 0.07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='wp-block-library-css'  href='https://criaderolusitania.com/wp-includes/css/dist/block-library/style.min.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/mckcfj3c/fk18l.css" media="all"/>
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<!-- <link rel='stylesheet' id='wc-blocks-vendors-style-css'  href='https://criaderolusitania.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='wc-blocks-style-css'  href='https://criaderolusitania.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/8xsvno4v/ftub7.css" media="all"/>
+<style id='joinchat-button-style-inline-css' type='text/css'>
+.wp-block-joinchat-button{border:none!important;text-align:center}.wp-block-joinchat-button figure{display:table;margin:0 auto;padding:0}.wp-block-joinchat-button figcaption{font:normal normal 400 .6em/2em var(--wp--preset--font-family--system-font,sans-serif);margin:0;padding:0}.wp-block-joinchat-button .joinchat-button__qr{background-color:#fff;border:6px solid #25d366;border-radius:30px;box-sizing:content-box;display:block;height:200px;margin:auto;overflow:hidden;padding:10px;width:200px}.wp-block-joinchat-button .joinchat-button__qr canvas,.wp-block-joinchat-button .joinchat-button__qr img{display:block;margin:auto}.wp-block-joinchat-button .joinchat-button__link{align-items:center;background-color:#25d366;border:6px solid #25d366;border-radius:30px;display:inline-flex;flex-flow:row nowrap;justify-content:center;line-height:1.25em;margin:0 auto;text-decoration:none}.wp-block-joinchat-button .joinchat-button__link:before{background:transparent var(--joinchat-ico) no-repeat center;background-size:100%;content:"";display:block;height:1.5em;margin:-.75em .75em -.75em 0;width:1.5em}.wp-block-joinchat-button figure+.joinchat-button__link{margin-top:10px}@media (orientation:landscape)and (min-height:481px),(orientation:portrait)and (min-width:481px){.wp-block-joinchat-button.joinchat-button--qr-only figure+.joinchat-button__link{display:none}}@media (max-width:480px),(orientation:landscape)and (max-height:480px){.wp-block-joinchat-button figure{display:none}}
+</style>
+<!-- <link rel='stylesheet' id='jquery-selectBox-css'  href='https://criaderolusitania.com/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='yith-wcwl-font-awesome-css'  href='https://criaderolusitania.com/wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='woocommerce_prettyPhoto_css-css'  href='//criaderolusitania.com/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='yith-wcwl-main-css'  href='https://criaderolusitania.com/wp-content/plugins/yith-woocommerce-wishlist/assets/css/style.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/f5t43y5o/ftub7.css" media="all"/>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 14px;--wp--preset--font-size--huge: 48px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://criaderolusitania.com/wp-content/plugins/contact-form-7/includes/css/styles.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-css'  href='https://criaderolusitania.com/wp-content/plugins/fami-buy-together/assets/vendors/bootstrap/bootstrap.min.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='famibt-frontend-css'  href='https://criaderolusitania.com/wp-content/plugins/fami-buy-together/assets/css/frontend.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='famisp-frontend-css'  href='https://criaderolusitania.com/wp-content/plugins/fami-sales-popup/assets/css/frontend.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='rs-plugin-settings-css'  href='https://criaderolusitania.com/wp-content/plugins/revslider/public/assets/css/rs6.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/dg6vwuoc/cbgv2.css" media="all"/>
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<!-- <link rel='stylesheet' id='yith-quick-view-css'  href='https://criaderolusitania.com/wp-content/plugins/yith-woocommerce-quick-view/assets/css/yith-quick-view.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/6os38vsh/fk18l.css" media="all"/>
+<style id='yith-quick-view-inline-css' type='text/css'>
+#yith-quick-view-modal .yith-wcqv-main{background:#ffffff;}
+#yith-quick-view-close{color:#cdcdcd;}
+#yith-quick-view-close:hover{color:#ff0000;}
+</style>
+<link rel='stylesheet' id='lebe-googlefonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800%7CMontserrat%3Aregular&#038;subset=latin%2Clatin-ext'  media='all' />
+<!-- <link rel='stylesheet' id='boostrap-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/assets/css/bootstrap.min.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='owl-carousel-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/assets/css/owl.carousel.min.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='font-awesome-css'  href='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/etzvm4b4/fk18l.css" media="all"/>
+<style id='font-awesome-inline-css' type='text/css'>
+[data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+</style>
+<!-- <link rel='stylesheet' id='flat-icons-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/assets/fonts/flaticon.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='scrollbar-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/assets/css/jquery.scrollbar.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='animation-on-scroll-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/assets/css/animation-on-scroll.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='lebe-custom-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/assets/css/customs.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/6knu7nkp/fk18l.css" media="all"/>
+<style id='lebe-custom-inline-css' type='text/css'>
+.vc_custom_1546828755158{padding-top: 25px !important;padding-right: 25px !important;padding-bottom: 25px !important;padding-left: 25px !important;border-radius: 3px !important;}.vc_custom_1548126485740{margin-bottom: -35px !important;padding-top: 25px !important;padding-right: 30px !important;padding-bottom: 150px !important;padding-left: 30px !important;background: #f9f9f8 url(https://lebe.famithemes.com/wp-content/uploads/2019/01/shopmega.jpg?id=1842) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;border-radius: 3px !important;}.vc_custom_1547603029191{padding-bottom: 20px !important;}.vc_custom_1547603037530{padding-bottom: 20px !important;}@media (max-width: 1024px){ .responsive_js_composer_custom_css_471192692 { margin-bottom: 0px!important;background-image:none!important; } }.vc_custom_1548126561999{margin-bottom: -1px !important;border-bottom-width: 25px !important;padding-top: 25px !important;padding-right: 35px !important;padding-bottom: 25px !important;padding-left: 35px !important;background-image: url(https://lebe.famithemes.com/wp-content/uploads/2019/01/homemega.jpg?id=1843) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border-radius: 3px !important;}.vc_custom_1547190091724{margin-right: -10px !important;margin-left: -10px !important;padding-bottom: 20px !important;}.vc_custom_1547190083550{margin-right: -10px !important;margin-left: -10px !important;padding-bottom: 20px !important;}.vc_custom_1547190075990{margin-right: -10px !important;margin-left: -10px !important;}.vc_custom_1546939304521{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546939406960{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940706811{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940714289{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940722637{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940731124{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940738395{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940746494{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940754300{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940761888{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940860495{padding-right: 10px !important;padding-left: 10px !important;}.vc_custom_1546940840643{padding-right: 10px !important;padding-left: 10px !important;}@media (max-width: 1024px){ .responsive_js_composer_custom_css_1832797551 { padding-top: 0px!important;padding-bottom: 0px!important; } }@media (max-width: 1024px){ .responsive_js_composer_custom_css_123392126 { padding-bottom: 0px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 1024px){ .responsive_js_composer_custom_css_646366186 { padding-bottom: 0px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 1024px){ .responsive_js_composer_custom_css_1006375935 { padding-bottom: 20px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }.vc_custom_1546828731465{padding-top: 25px !important;padding-right: 25px !important;padding-bottom: 25px !important;padding-left: 25px !important;border-radius: 3px !important;}
+</style>
+<!-- <link rel='stylesheet' id='lebe-main-style-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/style.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='prdctfltr-css'  href='https://criaderolusitania.com/wp-content/plugins/prdctfltr/lib/css/style.min.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='wc-lottery-css'  href='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery/public/css/wc-lottery-public.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='wc-lottery-pn-css'  href='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery-pick-number/public/css/wc-lottery-pn-public.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='jquery-alertable-css'  href='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery-pick-number/public/css/jquery.alertable.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='joinchat-css'  href='https://criaderolusitania.com/wp-content/plugins/creame-whatsapp-me/public/css/joinchat-btn.min.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/czxyn0z/ftub7.css" media="all"/>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='vc_lte_ie9-css'  href='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css'  media='screen' />
+<![endif]-->
+<!-- <link rel='stylesheet' id='js_composer_front-css'  href='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='cf7cf-style-css'  href='https://criaderolusitania.com/wp-content/plugins/cf7-conditional-fields/style.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='font-awesome.min-css'  href='https://criaderolusitania.com/wp-content/plugins/ziss/assets/vendors/font-awesome/css/font-awesome.min.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='ziss-frontend-css'  href='https://criaderolusitania.com/wp-content/plugins/ziss/assets/css/frontend.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='lebe_custom_css-css'  href='https://criaderolusitania.com/wp-content/themes/lebe/assets/css/customs.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/d2g7rr6i/fk18l.css" media="all"/>
+<style id='lebe_custom_css-inline-css' type='text/css'>
+body{font-family: "Montserrat";font-weight: 400;font-size:14px;}body
+{
+font-family: "Montserrat";
+}
+a:hover, a:focus, a:active {
+color: #dd9300;
+}
+q {
+border-left: 3px solid #dd9300;
+}
+blockquote p::before {
+border-left: 3px solid #dd9300;
+}
+.widget_rss .rss-date {
+color: #dd9300;
+}
+.style-07 .lebe-demo.style-01 .demo-button:hover {
+color: #dd9300;
+}
+.menu-social .social-list li a:hover {
+background-color: #dd9300;
+}
+.style-07 .horizon-menu .main-navigation .main-menu .menu-item:hover > a {
+color: #dd9300;
+}
+.horizon-menu .main-navigation .main-menu > .menu-item .submenu li.active > a {
+color: #dd9300;
+}
+.horizon-menu .main-navigation .main-menu > .menu-item .submenu li > a:hover {
+color: #dd9300;
+}
+.horizon-menu .main-navigation .main-menu .menu-item:hover .toggle-submenu::before {
+color: #dd9300 !important;
+}
+.box-mobile-menu .back-menu:hover,
+.box-mobile-menu .close-menu:hover {
+color: #dd9300;
+}
+.box-mobile-menu .main-menu .menu-item.active > a {
+color: #dd9300;
+}
+.box-mobile-menu .main-menu .menu-item:hover > a {
+color: #dd9300;
+}
+.box-mobile-menu .main-menu .menu-item:hover > .toggle-submenu::before {
+color: #dd9300;
+}
+.mobile-navigation:hover {
+color: #dd9300;
+}
+.menu-btn-icon:hover span {
+background-color: #dd9300 !important;
+}
+.single-product-mobile .product-grid .product-info .price {
+color: #dd9300;
+}
+.lebe-content-single-product-mobile .product-mobile-layout .woocommerce-product-gallery .flex-control-nav.flex-control-thumbs li img.flex-active {
+background-color: #dd9300;
+}
+div.lebe-content-single-product-mobile .summary .yith-wcwl-add-to-wishlist {
+color: #dd9300;
+}
+.woocommerce-cart-form-mobile .actions .actions-btn .shopping:hover {
+background-color: #dd9300;
+border-color: #dd9300;
+}
+.close-vertical-menu:hover {
+color: #dd9300;
+}
+.vertical-menu .main-navigation .main-menu > .menu-item:hover > a {
+color: #dd9300;
+}
+.header-search-box > .icons:hover {
+color: #dd9300;
+}
+.instant-search-close:hover {
+color: #dd9300;
+}
+.instant-search-modal .product-cats label span::before {
+border-bottom: 1px solid #dd9300;
+}
+.instant-search-modal .product-cats label span:hover,
+.instant-search-modal .product-cats label.selected span {
+color: #dd9300;
+}
+.search-view:hover {
+background-color: #dd9300;
+}
+.currency-language .wcml-dropdown-click a.wcml-cs-item-toggle:hover::before {
+border-color: #dd9300;
+}
+.currency-language .wcml-dropdown-click a.wcml-cs-item-toggle:hover::after {
+border-color: #dd9300 transparent transparent transparent;
+}
+.currency-language .dropdown > a:hover::after {
+border-color: #dd9300 transparent transparent transparent;
+}
+.currency-language .dropdown > a:hover::before {
+border-color: #dd9300;
+}
+.currency-language .dropdown .active a {
+color: #dd9300;
+}
+.header .lebe-minicart:hover .mini-cart-icon {
+color: #dd9300;
+}
+.header .lebe-minicart .mini-cart-icon .minicart-number {
+background: #dd9300;
+}
+.header .minicart-content-inner .close-minicart:hover {
+color: #dd9300;
+}
+.header .minicart-items .product-cart .product-remove .remove:hover {
+color: #dd9300;
+}
+.header .minicart-content-inner .actions .button:hover {
+color: #dd9300;
+}
+.header .to-cart:hover {
+background-color: #dd9300;
+}
+.header-type-transparent-white .horizon-menu .main-navigation .main-menu .menu-item:hover > a {
+color: #dd9300;
+}
+.header-type-transparent-white .currency-language .wcml-dropdown-click a.wcml-cs-item-toggle:hover::before,
+.header-type-transparent-white .currency-language .dropdown > a:hover::before {
+border-color: #dd9300;
+}
+.header-type-transparent-dark .currency-language .wcml-dropdown-click a:hover,
+.header-type-transparent-dark .currency-language .dropdown a:hover,
+.header-type-transparent-dark .block-account a:hover,
+.header-type-transparent-dark .header-search-box > .icons:hover,
+.header-type-transparent-dark .lebe-minicart .mini-cart-icon:hover,
+.header-type-transparent-dark .horizon-menu .main-navigation .main-menu .menu-item:hover > a {
+color: #dd9300;
+}
+.header-type-transparent-dark .currency-language .wcml-dropdown-click a.wcml-cs-item-toggle:hover::after,
+.header-type-transparent-dark .currency-language .dropdown > a:hover::after {
+border-color: #dd9300 transparent transparent transparent;
+}
+.header-type-transparent-dark .currency-language .wcml-dropdown-click a.wcml-cs-item-toggle:hover::before,
+.header-type-transparent-dark .currency-language .dropdown > a:hover::before {
+border-color: #dd9300;
+}
+h5.vc_custom_heading span {
+color: #dd9300;
+}
+.banner-page .content-banner .breadcrumb-trail .trail-items .trail-item a:hover span {
+color: #dd9300;
+}
+.banner-page .content-banner .breadcrumb-trail .trail-items .trail-item a:hover {
+color: #dd9300;
+}
+.post-info .cat-post a:hover, .main-single-content:not(.single-standard) .post-info .cat-post a:hover, .main-single-content:not(.single-standard) .post-info .tag-post a:hover {
+color: #dd9300;
+border-color: #dd9300;
+}
+.sticky .post-title a, .sticky .post-name a {
+color: #dd9300;
+}
+.post-title a:hover {
+color: #dd9300;
+}
+.post-author-blog a:hover {
+color: #dd9300;
+}
+.post-author a:hover {
+color: #dd9300;
+}
+.lebe-breadcrumb .breadcrumb > li:hover {
+color: #dd9300;
+}
+.single-container .header-post .cat-post a:hover,
+.single-container .header-post .tag-post a:hover {
+color: #dd9300;
+}
+.main-single-content .lebe-social a:hover {
+background: #dd9300;
+}
+.user-socials-wrap .user-social:hover {
+background-color: #dd9300;
+}
+h3.related-posts-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.post-single .owl-dots .owl-dot.active span {
+border-color: #dd9300;
+background: #dd9300;
+}
+.comment_container .flex a:hover {
+color: #dd9300;
+}
+.comment-form .form-submit .submit:hover {
+background: #dd9300;
+}
+.post-product-carousel:hover .icons,
+.social-share:hover .icons {
+color: #dd9300;
+}
+.blog-content.list .post-info .post-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.blog-content.grid .post-info .post-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.blog-modern .post-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.blog-content-standard .post-expand a:hover {
+color: #dd9300;
+}
+.blog-content-standard .post-date a:hover {
+color: #dd9300;
+}
+.lebe-ajax-load a:hover, .more-items .woo-product-loadmore:hover {
+background: #dd9300;
+}
+.more-items .woo-product-loadmore.loading {
+border-color: #dd9300;
+background-color: #dd9300;
+}
+.sidebar .widget ul li a:hover {
+color: #dd9300;
+}
+.widget_categories ul li.cat-item a:hover,
+.widget_categories ul li.cat-item.current-cat,
+.widget_categories ul li.cat-item.current-cat a {
+color: #dd9300;
+}
+a.social:hover {
+background: #dd9300;
+}
+.tagcloud a:hover {
+border-color: #dd9300;
+background: #dd9300;
+}
+.widget_shopping_cart .woocommerce-mini-cart__buttons .button:hover {
+background-color: #dd9300;
+}
+.WOOF_Widget .woof_container li .icheckbox_flat-purple.hover,
+.WOOF_Widget .woof_container li .iradio_flat-purple.hover,
+.icheckbox_flat-purple.checked,
+.iradio_flat-purple.checked {
+background: #dd9300 0 0 !important;
+border: 1px solid #dd9300 !important;
+}
+.WOOF_Widget .woof_container .icheckbox_flat-purple.checked ~ label,
+.WOOF_Widget .woof_container .iradio_flat-purple.checked ~ label,
+.WOOF_Widget .woof_container li label.hover,
+.WOOF_Widget .woof_container li label.hover {
+color: #dd9300;
+}
+nav.woocommerce-breadcrumb a:hover {
+color: #dd9300;
+}
+.toolbar-products .category-filter li a::before {
+border-bottom: 1px solid #dd9300;
+}
+.toolbar-products .category-filter li.active a,
+.toolbar-products .category-filter li a:hover {
+color: #dd9300;
+}
+span.prdctfltr_title_selected {
+background: #dd9300;
+}
+div.prdctfltr_wc.prdctfltr_round .prdctfltr_filter label.prdctfltr_active > span::before, div.prdctfltr_wc.prdctfltr_round .prdctfltr_filter label:hover > span::before {
+background: #dd9300;
+border: 1px double #dd9300;
+color: #dd9300;
+}
+.prdctfltr_filter .prdctfltr_regular_title::before {
+border-top: 1px solid #dd9300;
+}
+div.prdctfltr_wc.prdctfltr_round .prdctfltr_filter label:hover {
+color: #dd9300;
+}
+.prdctfltr_woocommerce_filter_submit:hover, .prdctfltr_wc .prdctfltr_buttons .prdctfltr_reset span:hover, .prdctfltr_sale:hover,
+.prdctfltr_instock:hover {
+background: #dd9300;
+}
+.prdctfltr_sc.hide-cat-thumbs .product-category h2.woocommerce-loop-category__title:hover {
+color: #dd9300;
+}
+.prdctfltr_sc.hide-cat-thumbs .product-category h2.woocommerce-loop-category__title::before {
+border-bottom: 1px solid #dd9300;
+}
+.prdctfltr-pagination-load-more:not(.prdctfltr-ignite) .button:hover {
+background: #dd9300;
+}
+div.pf_rngstyle_flat .irs-from::after, div.pf_rngstyle_flat .irs-to::after, div.pf_rngstyle_flat .irs-single::after {
+border-top-color: #dd9300;
+}
+div.pf_rngstyle_flat .irs-from, div.pf_rngstyle_flat .irs-to, div.pf_rngstyle_flat .irs-single {
+background: #dd9300;
+}
+div.pf_rngstyle_flat .irs-bar {
+background: #dd9300;
+}
+div.pf_rngstyle_flat .irs-bar::after {
+background: #dd9300;
+}
+div.pf_rngstyle_flat .irs-bar::before {
+background: #dd9300;
+}
+.toolbar-products-mobile .cat-item.active, .toolbar-products-mobile .cat-item.active a,
+.real-mobile-toolbar.toolbar-products-shortcode .cat-item.active, .real-mobile-toolbar.toolbar-products-shortcode .cat-item.active a {
+color: #dd9300;
+}
+.enable-shop-page-mobile .shop-page a.products-size.products-list.active {
+color: #dd9300;
+}
+.enable-shop-page-mobile span.prdctfltr_title_selected {
+background: #dd9300;
+}
+.enable-shop-page-mobile .shop-page .product-inner .price {
+color: #dd9300;
+}
+.enable-shop-page-mobile .woocommerce-page-header ul .line-hover a:hover,
+.enable-shop-page-mobile .woocommerce-page-header ul .line-hover.active a {
+color: #dd9300;
+}
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-bar {
+background: #dd9300;
+}
+.woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
+color: #dd9300;
+}
+.woocommerce-product-gallery .flex-control-nav.flex-control-thumbs .slick-arrow {
+color: #dd9300;
+}
+.summary .woocommerce-product-rating .woocommerce-review-link:hover {
+color: #dd9300;
+}
+.summary .price {
+color: #dd9300;
+}
+.reset_variations:hover {
+background-color: #dd9300;
+}
+div button.close {
+color: #dd9300;
+}
+.summary .cart .single_add_to_cart_button:hover {
+background-color: #dd9300;
+}
+.product_meta a:hover {
+color: #dd9300;
+}
+.social-share-product {
+background: #dd9300;
+}
+.sticky_info_single_product button.lebe-single-add-to-cart-btn.btn.button {
+background: #dd9300;
+}
+.gallery_detail .slick-dots li.slick-active button {
+background: #dd9300;
+}
+.gallery_detail .slick-dots li button:hover {
+background: #dd9300;
+}
+.big_images .slick-dots li button::before {
+border: 2px solid #dd9300;
+}
+.wc-tabs li a::before {
+border-bottom: 2px solid #dd9300;
+}
+p.stars:hover a:before,
+p.stars.selected:not(:hover) a:before {
+color: #dd9300;
+}
+.product-grid-title::before {
+background-color: #dd9300;
+}
+.total-price-html {
+color: #dd9300;
+}
+.total-price-html {
+color: #dd9300;
+}
+div.famibt-wrap .famibt-item .famibt-price {
+color: #dd9300;
+}
+.famibt-wrap ins {
+color: #dd9300;
+}
+.famibt-messages-wrap a.button.wc-forward:hover {
+background: #dd9300;
+}
+.return-to-shop .button:hover {
+background-color: #dd9300;
+}
+body .woocommerce table.shop_table tr td.product-remove a:hover {
+color: #dd9300;
+}
+body .woocommerce table.shop_table .product-add-to-cart .add_to_cart:hover {
+background: #dd9300;
+}
+.actions-btn .shopping:hover {
+background-color: #dd9300;
+}
+.wc-proceed-to-checkout .checkout-button:hover {
+background-color: #dd9300;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+background-color: #dd9300;
+}
+.owl-carousel.nav-center .owl-nav > div:hover {
+color: #dd9300;
+}
+.track_order .form-tracking .button:hover {
+background-color: #dd9300;
+}
+.lebe-newsletter.style-01 .newsletter-form-wrap.processing button::before {
+color: #dd9300;
+}
+.lebe-newsletter.style-01 .newsletter-form-wrap button:hover {
+color: #dd9300;
+}
+.lebe-newsletter.style-02 .newsletter-form-wrap button:hover {
+background-color: #dd9300;
+}
+.lebe-newsletter.style-03 .newsletter-form-wrap button:hover {
+color: #dd9300;
+}
+.lebe-testimonial.style-03 .name a:hover {
+color: #dd9300;
+}
+.lebe-blog.style-01 .blog-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-blog.style-01 .blog-readmore:hover {
+color: #dd9300;
+}
+.lebe-blog.style-01 .blog-readmore::before,
+.lebe-blog.style-03 .blog-readmore::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-blog.style-01 .blog-heading::before {
+border: 1px solid #dd9300;
+}
+.lebe-blog.style-02 .blog-info .blog-title::after {
+border: 1px solid #dd9300;
+}
+.lebe-blog.style-02 .blog-readmore:hover {
+border: 2px solid #dd9300;
+}
+.lebe-blog.style-02 .blog-readmore::before {
+background-color: #dd9300;
+}
+.lebe-blog.style-03 .blog-title::after {
+border: 1px solid #dd9300;
+}
+.lebe-blog.style-03 .blog-readmore:hover {
+color: #dd9300;
+}
+.lebe-team.style-01 .thumb:before {
+background-color: #dd9300;
+}
+.lebe-categories.style-02 .category-name a:hover {
+color: #dd9300;
+}
+.lebe-instagram-sc.style-02 .desc {
+color: #dd9300;
+}
+.lebe-instagram-sc.style-02 .desc::before {
+border-bottom: 2px solid #dd9300;
+}
+.product-item.style-01 .product-thumb .vertical_thumnail .slick-current img {
+border-color: #dd9300;
+}
+.lebe-dealproduct .product-info .price ins {
+background-color: #dd9300;
+}
+.lebe-instagramshopwrap .slick-dots li.slick-active {
+background-color: #dd9300;
+border-color: #dd9300;
+}
+.lebe-products .view-products:hover {
+background-color: #dd9300;
+border-color: #dd9300;
+}
+.contact-form-container .wpcf7-submit:hover {
+background-color: #dd9300;
+}
+.product-grid .yith-wcqv-button:hover {
+background-color: #dd9300;
+}
+.yith-wcqv-button:hover {
+color: #dd9300;
+}
+#yith-quick-view-close:hover {
+color: #dd9300;
+}
+#yith-quick-view-content .woocommerce-product-gallery .flex-control-nav.flex-control-thumbs > li img.flex-active {
+border: 1px solid #dd9300;
+}
+.product-list .yith-wcwl-add-to-wishlist:hover {
+border-color: #dd9300;
+background: #dd9300;
+}
+.product-list .product-inner .add_to_cart_button:hover,
+.product-list .product-inner .product_type_variable:hover,
+.product-list .product-inner .product_type_grouped:hover,
+.product-list .product-inner .product_type_simple:hover,
+.product-list .product-inner .product_type_external:hover {
+border-color: #dd9300;
+background: #dd9300;
+}
+.product-list .yith-wcqv-button:hover {
+background-color: #dd9300;
+}
+.product-list .product-inner .added_to_cart:hover {
+border-color: #dd9300;
+}
+.product-grid .product-item.style-4 .yith-wcwl-add-to-wishlist:hover,
+.product-grid .product-item.style-4 .add-to-cart:hover,
+.product-grid .product-item.style-4 a.yith-wcqv-button:hover,
+.product-grid .style-4 .product-inner .add_to_cart_button:hover,
+.product-grid .style-4 .product-inner .added_to_cart:hover,
+.product-grid .style-4 .product-inner .product_type_variable:hover,
+.product-grid .style-4 .product-inner .product_type_simple:hover,
+.product-grid .style-4 .product-inner .product_type_external:hover,
+.product-grid .style-4 .product-inner .product_type_grouped:hover {
+color: #dd9300;
+}
+body.wpb-js-composer .vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title > a {
+color: #dd9300 !important;
+}
+body .vc_toggle_default.vc_toggle_active .vc_toggle_title > h4 {
+color: #dd9300;
+}
+.lebe-banner.style-01 .banner-info .button {
+color: #dd9300;
+}
+.lebe-banner.style-01 .banner-info .button::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-banner.style-08 .button:hover,
+.lebe-banner.style-06 .bigtitle:hover a,
+.lebe-iconbox.style-07 .button:hover {
+color: #dd9300;
+}
+.lebe-banner.style-08 .button:hover::before,
+.lebe-iconbox.style-07 .button:hover::before {
+border-color: #dd9300;
+}
+.lebe-banner.style-03 .button {
+color: #dd9300;
+}
+.lebe-banner.style-03 .button::before {
+border: 1px solid #dd9300;
+}
+.lebe-banner.style-04 .bigtitle::before {
+background-color: #dd9300;
+}
+.lebe-banner.style-04 .bigtitle:hover::before {
+background-color: #dd9300;
+}
+.lebe-banner.style-13 .button:hover {
+color: #dd9300;
+}
+.lebe-banner.style-15 .button:hover {
+color: #dd9300;
+}
+.lebe-tabs .tab-head .tab-link li a::before {
+border: 1px solid #dd9300;
+}
+.product-info.equal-elem .product-title a:hover {
+color: #dd9300;
+}
+.lebe-iconbox.style-03 .icon {
+color: #dd9300;
+}
+.lebe-iconbox.style-06 .button:hover {
+color: #dd9300;
+}
+.lebe-iconbox.style-06 .button:hover::before {
+border-color: #dd9300;
+}
+.lebe-title.style1 .block-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-title.style1.light.line-red .block-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-title.style4 .block-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-title.style5 .block-title::before {
+border: 1px solid #dd9300;
+}
+.lebe-title.style8 .block-title::before {
+border-bottom: 2px solid #dd9300;
+}
+.lebe-newsletter.style-06 .submit-newsletter:hover {
+color: #dd9300;
+}
+.lebe-newsletter.style-05.light .submit-newsletter {
+background: #dd9300;
+}
+.lebe-newsletter.style-05.light .submit-newsletter:hover,
+.lebe-newsletter.style-04 .submit-newsletter:hover,
+.lebe-newsletter.style-09 .submit-newsletter:hover,
+.lebe-newsletter.style-11 .submit-newsletter:hover {
+color: #dd9300;
+}
+.lebe-newsletter.style-04 .submit-newsletter::before,
+.lebe-newsletter.style-09 .submit-newsletter::before,
+.lebe-newsletter.style-11 .submit-newsletter::before {
+background: #dd9300;
+}
+.lebe-newsletter.style-09 .submit-newsletter:hover::before {
+border: 2px solid #dd9300;
+}
+.lebe-newsletter.style-07 .submit-newsletter:hover,
+.lebe-newsletter.style-10 .submit-newsletter:hover {
+color: #dd9300;
+}
+.lebe-newsletter.style-08.light .submit-newsletter:hover {
+color: #dd9300;
+}
+.lebe-newsletter.style-09 .submit-newsletter:hover {
+color: #dd9300;
+}
+.lebe-newsletter.style-11 .submit-newsletter:hover {
+color: #dd9300;
+}
+.lebe-newsletter.style-11 .newsletter-title::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-button.style-01 .button:hover {
+background: #dd9300;
+border-color: #dd9300;
+}
+.lebe-button.style-02 .button:hover {
+background: #dd9300;
+}
+.lebe-custommenu.style-01 .widgettitle::before {
+border-bottom: 1px solid #dd9300;
+}
+.lebe-custommenu.style-01.light .menu li a:hover,
+.lebe-custommenu.style-01 .menu li a:hover,
+.footer.style-10 .lebe-custommenu.style-01.light ul li a:hover {
+color: #dd9300;
+}
+.lebe-custommenu.style-02 .menu li:hover a {
+color: #dd9300;
+}
+.lebe-custommenu.style-03 ul li a:hover {
+color: #dd9300;
+}
+.lebe-custommenu ul li:hover a,
+.lebe-custommenu.style-05.light ul li:hover a {
+color: #dd9300;
+}
+.lebe-socials .social-item::before {
+background-color: #dd9300;
+}
+.lebe-socials.style-02 .social-item:hover {
+border-color: #dd9300;
+}
+.lebe-buttonvideo.style-01 .lebe-bt-video a {
+background: #dd9300;
+}
+.lebe-buttonvideo.style-01 .lebe-bt-video a::after {
+border: 3px solid #dd9300;
+}
+.lebe-buttonvideo.style-01 .lebe-bt-video a span::after {
+border-color: transparent transparent transparent #dd9300;
+}
+.lebe-instagramshopwrap.icontype.style-02 .title-insshop {
+color: #dd9300;
+}
+.breadcrumb > li a:hover {
+color: #dd9300;
+}
+.woocommerce-MyAccount-content input.button:hover {
+background: #dd9300;
+}
+.woocommerce-MyAccount-navigation > ul li.is-active a {
+color: #dd9300;
+}
+.shop-sidebar .widget ul li a:hover {
+color: #dd9300;
+}
+.shop-sidebar .widget ul li a:hover::before {
+background: #dd9300 none repeat scroll 0 0;
+border-color: #dd9300;
+}
+.products-size.active svg, .products-size:hover svg {
+stroke: #dd9300;
+fill: #dd9300;
+}
+a.filter-toggle > i {
+background: #dd9300;
+}
+.price_slider_amount .button:hover, .price_slider_amount .button:focus {
+background-color: #dd9300;
+border: 2px solid #dd9300;
+}
+.validate-required label::after {
+color: #dd9300;
+}
+header .wcml_currency_switcher li li a:hover {
+color: #dd9300;
+}
+.error404 .lebe-searchform button:hover {
+background: #dd9300;
+}
+.page-404 a.button {
+background-color: #dd9300;
+}
+.wpb-js-composer div.vc_tta.vc_tta-accordion .vc_active .vc_tta-controls-icon-position-right .vc_tta-controls-icon::before {
+border-color: #dd9300;
+}
+.modal-content > button.close:hover {
+color: #dd9300;
+}
+a#cn-accept-cookie:hover {
+background-color: #dd9300;
+}
+a.button.btn.lebe-button.owl-btn-link:hover {
+background: #dd9300;
+}
+.product-inner .product-title a:hover {
+color: #dd9300;
+}
+.product-inner .add_to_cart_button:hover,
+.product-inner .added_to_cart:hover,
+.product-inner .product_type_variable:hover,
+.product-inner .product_type_simple:hover,
+.product-inner .product_type_external:hover,
+.product-inner .product_type_grouped:hover {
+background: #dd9300;
+}
+.yith-wcwl-add-to-wishlist:hover {
+background: #dd9300;
+border-color: #dd9300;
+}
+.widget.widget_product_categories ul li a:hover{
+color:#dd9300;
+}
+@media (min-width: 992px) {
+.ziss-popup-wrap .ziss-popup-inner .ziss-popup-body.ziss-right-no-content ~ .ziss-popup-nav:hover,
+.ziss-popup-wrap .ziss-popup-inner .ziss-popup-body:not(.ziss-right-no-content) ~ .ziss-popup-nav:hover {
+color: #dd9300;
+}
+}body {color: #0a0a0a}@media (min-width: 1200px) {
+}@media (max-width: 1199px) {
+}.vc_custom_1546936417866{padding-top: 55px !important;padding-bottom: 50px !important;background-color: #151515 !important;}.vc_custom_1546585849264{padding-top: 12px !important;padding-bottom: 5px !important;background-color: #151515 !important;}.vc_custom_1546936359310{padding-top: 30px !important;padding-bottom: 30px !important;}.vc_custom_1546500650649{border-right-width: 1px !important;border-left-width: 1px !important;padding-top: 30px !important;border-left-color: #2b2b2b !important;border-left-style: solid !important;border-right-color: #2b2b2b !important;border-right-style: solid !important;}.vc_custom_1546500673424{padding-top: 30px !important;}@media (max-width: 767px){ .responsive_js_composer_custom_css_682329210 { padding-top: 35px!important;padding-bottom: 35px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 991px){ .responsive_js_composer_custom_css_604464320 { padding-bottom: 12px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 991px){ .responsive_js_composer_custom_css_1875003769 .vc_column-inner{padding-bottom: 0px!important;}}@media (max-width: 767px){ .responsive_js_composer_custom_css_1875003769 .vc_column-inner{padding-bottom: 25px!important;}}@media (max-width: 767px){ .responsive_js_composer_custom_css_977196938 .vc_column-inner{padding-top: 0px!important;}}@media (max-width: 767px){ .responsive_js_composer_custom_css_1899042007 .vc_column-inner{padding-bottom: 25px!important;}}@media (max-width: 991px){ .responsive_js_composer_custom_css_621767971 .vc_column-inner{padding-bottom: 7px!important;}}
+</style>
+<script type="text/template" id="tmpl-variation-template">
+<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+<p>Lo siento, este producto no está disponible. Por favor, elige otra combinación.</p>
+</script>
+<script src='//criaderolusitania.com/wp-content/cache/wpfc-minified/lln5brui/fk18l.js' type="text/javascript"></script>
+<!-- <script  src='https://criaderolusitania.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/fami-buy-together/assets/vendors/jquery-lazy/jquery.lazy.min.js' id='lazy-js'></script> -->
+<script type='text/javascript' id='famibt-frontend-js-extra'>
+/* <![CDATA[ */
+var famibt = {"ajaxurl":"https:\/\/criaderolusitania.com\/wp-admin\/admin-ajax.php","security":"c568011618","text":{"for_num_of_items":"For {{number}} item(s)","add_to_cart_text":"Add All To Cart","adding_to_cart_text":"Adding To Cart...","view_cart":"View cart","no_product_selected_text":"You must select at least one product","add_to_cart_success":"{{number}} product(s) was successfully added to your cart.","add_to_cart_fail_single":"One product is out of stock.","add_to_cart_fail_plural":"{{number}} products were out of stocks."},"price_format":"%1$s%2$s","price_decimals":"0","price_thousand_separator":",","price_decimal_separator":".","currency_symbol":"$","wc_tax_enabled":"","cart_url":"https:\/\/criaderolusitania.com\/carro-de-compras\/","ex_tax_or_vat":""};
+/* ]]> */
+</script>
+<script src='//criaderolusitania.com/wp-content/cache/wpfc-minified/qpfr77c/fk18l.js' type="text/javascript"></script>
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/fami-buy-together/assets/js/frontend.js' id='famibt-frontend-js'></script> -->
+<script type='text/javascript' id='famisp-frontend-js-extra'>
+/* <![CDATA[ */
+var famisp = {"ajaxurl":"https:\/\/criaderolusitania.com\/wp-admin\/admin-ajax.php","security":"9fd5c7c11a","sales_popup_data":{"famisp_enable_sales_popup":"yes","famisp_disable_sales_popup_mobile":"yes","famisp_popup_text":"Un usuario en {address} adquiri\u00f3 {product_name} hace {purchased_time} {time_unit}","famisp_min_time":"15000","famisp_max_time":"25000","famisp_products":[],"famisp_products_ids":"","famisp_enable_ran_buy_time_in_sec":"yes","famisp_min_random_buy_time_in_sec":"0","famisp_max_random_buy_time_in_sec":"59","famisp_enable_ran_buy_time_in_min":"yes","famisp_min_random_buy_time_in_min":"1","famisp_max_random_buy_time_in_min":"59","famisp_enable_ran_buy_time_in_hour":"yes","famisp_min_random_buy_time_in_hour":"1","famisp_max_random_buy_time_in_hour":"47","famisp_enable_ran_buy_time_in_day":"yes","famisp_min_random_buy_time_in_day":"2","famisp_max_random_buy_time_in_day":"10","all_addresses":[]},"text":{"second":"second","seconds":"seconds","minute":"minute","minutes":"minutes","hour":"hour","hours":"hours","day":"day","days":"days"},"price_format":"%1$s%2$s","price_decimals":"0","price_thousand_separator":",","price_decimal_separator":".","currency_symbol":"$","wc_tax_enabled":"","cart_url":"https:\/\/criaderolusitania.com\/carro-de-compras\/"};
+/* ]]> */
+</script>
+<script src='//criaderolusitania.com/wp-content/cache/wpfc-minified/mav0q6b8/fk18l.js' type="text/javascript"></script>
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/fami-sales-popup/assets/js/frontend.js' id='famisp-frontend-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/revslider/public/assets/js/revolution.tools.min.js' id='tp-tools-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js' id='revmin-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' id='jquery-blockui-js'></script> -->
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"https:\/\/criaderolusitania.com\/carro-de-compras\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script src='//criaderolusitania.com/wp-content/cache/wpfc-minified/f5ptkamp/fk18l.js' type="text/javascript"></script>
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js' id='wc-add-to-cart-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js' id='vc_woocommerce-add-to-cart-js-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/bootstrap.min.js' id='bootstrap-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/owl.carousel.min.js' id='owl-carousel-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/jquery.magnific-popup.min.js' id='magnific-popup-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/jquery.scrollbar.min.js' id='scrollbar-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/jquery.sticky.js' id='sticky-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/jquery.countdown.js' id='jquery-countdown-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/theia-sticky-sidebar.min.js' id='theia-sticky-sidebar-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/threesixty.min.js' id='threesixty-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/slick.js' id='slick-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/SmoothScroll.min.js' id='smooth-scroll-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery/public/js/jquery.plugin.min.js' id='wc-lottery-jquery-plugin-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery/public/js/jquery.countdown.min.js' id='wc-lottery-countdown-js'></script> -->
+<script type='text/javascript' id='wc-lottery-countdown-language-js-extra'>
+/* <![CDATA[ */
+var wc_lottery_language_data = {"labels":{"Years":"A\u00f1os","Months":"Meses","Weeks":"Semanas","Days":"D\u00edas","Hours":"Horas","Minutes":"Minutos","Seconds":"Segundos"},"labels1":{"Year":"A\u00f1o","Month":"Mese","Week":"Semana","Day":"D\u00eda","Hour":"Hora","Minute":"Minuto","Second":"Segundo"},"compactLabels":{"y":"y","m":"m","w":"w","d":"d"}};
+/* ]]> */
+</script>
+<script src='//criaderolusitania.com/wp-content/cache/wpfc-minified/kepjh67k/fk18l.js' type="text/javascript"></script>
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery/public/js/jquery.countdown.language.js' id='wc-lottery-countdown-language-js'></script> -->
+<script type='text/javascript' id='wc-lottery-js-extra'>
+/* <![CDATA[ */
+var wc_lottery_data = {"finished":"La rifa ha finalizado. Por favor refresque la p\u00e1gina para ver los ganadores.","gtm_offset":"-5","started":"La rifa ha empezado. Por favor refresque la p\u00e1gina.","compact_counter":"no","price_decimals":"0","price_decimal_separator":".","price_thousand_separator":","};
+/* ]]> */
+</script>
+<script src='//criaderolusitania.com/wp-content/cache/wpfc-minified/llegzb5c/fk18l.js' type="text/javascript"></script>
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery/public/js/wc-lottery-public.js' id='wc-lottery-js'></script> -->
+<script type='text/javascript' id='wc-lottery-pn-js-extra'>
+/* <![CDATA[ */
+var wc_lottery_pn = {"maximum_text":"You already have selected maximum number of tickets!","sold_text":"Ticket sold!","in_cart_text":"You have already this ticket in your cart!","logintext":"\u00a1Hola! Para poder adquirir tu boleta debes iniciar sesi\u00f3n. En el siguiente link podr\u00e1s acceder o crear tu cuenta: <a href=\"https:\/\/criaderolusitania.com\/mi-cuenta\/\" class=\"button\">HAZ CLIC AQU\u00cd PARA INICIAR SESI\u00d3N \u2192<\/a>","please_pick":"Please pick a number. ","please_answer":"Please answer the question.","please_true_answer":"You must pick correct answer.","reserve_ticket":"yes"};
+/* ]]> */
+</script>
+<script src='//criaderolusitania.com/wp-content/cache/wpfc-minified/qvzfwios/fk18l.js' type="text/javascript"></script>
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery-pick-number/public/js/wc-lottery-pn-public.js' id='wc-lottery-pn-js'></script> -->
+<!-- <script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce-lottery-pick-number/public/js/jquery.alertable.min.js' id='jquery-alertable-js'></script> -->
+<link rel="https://api.w.org/" href="https://criaderolusitania.com/wp-json/" /><link rel="alternate" type="application/json" href="https://criaderolusitania.com/wp-json/wp/v2/pages/3028" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://criaderolusitania.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://criaderolusitania.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 6.0.3" />
+<meta name="generator" content="WooCommerce 6.8.0" />
+<link rel='shortlink' href='https://criaderolusitania.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://criaderolusitania.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcriaderolusitania.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://criaderolusitania.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcriaderolusitania.com%2F&#038;format=xml" />
+<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style><meta name="generator" content="Powered by Slider Revolution 6.1.0 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://criaderolusitania.com/wp-content/uploads/2019/10/cropped-lusitania-criadero-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://criaderolusitania.com/wp-content/uploads/2019/10/cropped-lusitania-criadero-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://criaderolusitania.com/wp-content/uploads/2019/10/cropped-lusitania-criadero-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://criaderolusitania.com/wp-content/uploads/2019/10/cropped-lusitania-criadero-1-270x270.png" />
+<meta name="generator" content="WooCommerce Product Filter - All in One WooCommerce Filter"/><script type="text/javascript">function setREVStartSize(a){try{var b,c=document.getElementById(a.c).parentNode.offsetWidth;if(c=0===c||isNaN(c)?window.innerWidth:c,a.tabw=void 0===a.tabw?0:parseInt(a.tabw),a.thumbw=void 0===a.thumbw?0:parseInt(a.thumbw),a.tabh=void 0===a.tabh?0:parseInt(a.tabh),a.thumbh=void 0===a.thumbh?0:parseInt(a.thumbh),a.tabhide=void 0===a.tabhide?0:parseInt(a.tabhide),a.thumbhide=void 0===a.thumbhide?0:parseInt(a.thumbhide),a.mh=void 0===a.mh||""==a.mh?0:a.mh,"fullscreen"===a.layout||"fullscreen"===a.l)b=Math.max(a.mh,window.innerHeight);else{for(var d in a.gw=Array.isArray(a.gw)?a.gw:[a.gw],a.rl)(void 0===a.gw[d]||0===a.gw[d])&&(a.gw[d]=a.gw[d-1]);for(var d in a.gh=void 0===a.el||""===a.el||Array.isArray(a.el)&&0==a.el.length?a.gh:a.el,a.gh=Array.isArray(a.gh)?a.gh:[a.gh],a.rl)(void 0===a.gh[d]||0===a.gh[d])&&(a.gh[d]=a.gh[d-1]);var e,f=Array(a.rl.length),g=0;for(var d in a.tabw=a.tabhide>=c?0:a.tabw,a.thumbw=a.thumbhide>=c?0:a.thumbw,a.tabh=a.tabhide>=c?0:a.tabh,a.thumbh=a.thumbhide>=c?0:a.thumbh,a.rl)f[d]=a.rl[d]<window.innerWidth?0:a.rl[d];for(var d in e=f[0],f)e>f[d]&&0<f[d]&&(e=f[d],g=d);var h=c>a.gw[g]+a.tabw+a.thumbw?1:(c-(a.tabw+a.thumbw))/a.gw[g];b=a.gh[g]*h+(a.tabh+a.thumbh)}void 0===window.rs_init_css&&(window.rs_init_css=document.head.appendChild(document.createElement("style"))),document.getElementById(a.c).height=b,window.rs_init_css.innerHTML+="#"+a.c+"_wrapper { height: "+b+"px }"}catch(a){console.log("Failure at Presize of Slider:"+a)}};</script>
+<style type="text/css" id="wp-custom-css">
+.required{
+color:red;
+}
+input[type="date"],input[type="select"]{
+border: 1px solid #dddddd;
+border-radius: 0;
+font-size: 14px;
+line-height: 54px;
+height: 56px;
+padding: 0 25px;
+-webkit-appearance: none;
+appearance: none;
+width:100%;
+}		</style>
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style id="lebe-toolkit-inline" type="text/css"></style>
+<style  type="text/css">@media (max-width: 1366px){ .responsive_js_composer_custom_css_1412614706 { padding-right: 50px!important;padding-left: 50px!important;margin-top: -160px!important; } }@media (max-width: 1024px){ .responsive_js_composer_custom_css_1412614706 { padding-bottom: 55px!important;margin-top: 55px!important; } }@media (max-width: 991px){ .responsive_js_composer_custom_css_1412614706 { padding-right: 15px!important;padding-left: 15px!important; } }@media (max-width: 767px){ .responsive_js_composer_custom_css_1412614706 { padding-right: 0px!important;padding-bottom: 35px!important;padding-left: 0px!important;margin-top: 35px!important; } }@media (max-width: 1280px){ .responsive_js_composer_custom_css_1512812836 { padding-bottom: 55px!important; } }@media (max-width: 767px){ .responsive_js_composer_custom_css_1512812836 { padding-bottom: 35px!important; } }@media (max-width: 1366px){ .responsive_js_composer_custom_css_240197898 { padding-top: 70px!important;padding-bottom: 70px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 1280px){ .responsive_js_composer_custom_css_240197898 { padding-top: 55px!important;padding-bottom: 55px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 767px){ .responsive_js_composer_custom_css_240197898 { padding-top: 35px!important;padding-bottom: 35px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 1280px){ .responsive_js_composer_custom_css_1630273082 { padding-top: 55px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 767px){ .responsive_js_composer_custom_css_1630273082 { padding-top: 35px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 1280px){ .responsive_js_composer_custom_css_241638778 .vc_column-inner{padding-right: 15px!important;padding-left: 15px!important;}}@media (max-width: 991px){ .responsive_js_composer_custom_css_241638778 .vc_column-inner{padding-bottom: 20px!important;}}@media (max-width: 1280px){ .responsive_js_composer_custom_css_977570267 .vc_column-inner{padding-right: 15px!important;padding-left: 15px!important;}}@media (max-width: 991px){ .responsive_js_composer_custom_css_977570267 .vc_column-inner{padding-bottom: 20px!important;}}@media (max-width: 1280px){ .responsive_js_composer_custom_css_613038701 .vc_column-inner{padding-right: 15px!important;padding-left: 15px!important;}}@media (max-width: 1280px){ .responsive_js_composer_custom_css_134594702 { margin-bottom: 35px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }@media (max-width: 767px){ .responsive_js_composer_custom_css_134594702 { margin-bottom: 25px!important;background-image:none!important;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);                box-shadow: 0px 0px 0px 0px rgba(0,0,0,1) } }</style>
+</head>
+<body data-rsssl=1 class="home page-template-default page page-id-3028 wp-embed-responsive theme-lebe woocommerce-no-js -1.4.8 lebe-none-mobile-device enable-animation-on-scroll wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
+<script data=cfasync="false" data-no-defer="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+<div id="page-wrapper"
+class="page-wrapper  wrapper_menu-sticky  ">
+<div class="body-overlay"></div>
+<div class="sidebar-canvas-overlay"></div>
+<div id="box-mobile-menu" class="box-mobile-menu full-height">
+<a href="javascript:void(0);" id="back-menu" class="back-menu"><i class="pe-7s-angle-left"></i></a>
+<span class="box-title">Menu</span>
+<a href="javascript:void(0);" class="close-menu"><i class="pe-7s-close"></i></a>
+<div class="box-inner"></div>
+</div>
+<header id="header"
+class="site-header header style-03 header-mn_l-lg_cl-ic_r mn_l lg_l ic_r  menu-sticky-smart header-pos-relative">
+<div class="header-main-inner">
+<div class="header-wrap"
+style="background-color: #000000; color: #ffffff;">
+<div class="header-wrap-stick">
+<div class="header-position" style="background-color: #000000;">
+<div class="header-container container">
+<div class="main-menu-wrapper"></div>
+<div class="row row-table">
+<div class="header-menu horizon-menu col-md-6 col-sm-6">
+<div class="header-logo">
+<div class="logo">
+<a href="index.html"><picture><source  type='image'><img style="width:160px" alt="Criadero Lusitania" src="img/IMG_0447-removebg-preview.png" class="_rw" data-eio="p" /></picture></a>                                </div>
+</div>
+
+<div class="main-menu">
+<nav class="main-navigation">
+<ul id="menu-menu-principal" class="clone-main-menu lebe-nav main-menu"><li id="menu-item-3031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3028 current_page_item menu-item-3031 active"><a title="Inicio" href="index.html">Inicio</a></li>
+
+</li>
+<li id="menu-item-3032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3032"><a title="Acerca de" href="https://drive.google.com/file/d/1aCcRctvdvnNSoOLGW-2xld7mWq9U6FAk/view?usp=sharing">Spa</a></li>
+<li id="menu-item-3172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3172"><a title="Galería" href="#gal">Galería</a></li>
+<li id="menu-item-3033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3033"><a title="Contáctenos" href="https://api.whatsapp.com/send/?phone=573138525030&text&type=phone_number&app_absent=0">Contáctenos</a></li>
+</ul>                                </nav>
+</div>
+</div>
+<div class="header-control-right col-md-6 col-sm-6">
+<div class="header-search-box">
+</div>
+
+
+<a class="menu-bar mobile-navigation" href="javascript:void(0)">
+<span class="menu-btn-icon">
+<span style="color: #ffffff;"></span>
+<span style="color: #ffffff;"></span>
+<span style="color: #ffffff;"></span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header-action-res" style="background-color: #000000; color: #ffffff;">
+<div class="meta-woo">
+<a class="menu-bar mobile-navigation" href="javascript:void(0)">
+<span class="menu-btn-icon">
+<span style="color: #ffffff;"></span>
+<span style="color: #ffffff;"></span>
+<span style="color: #ffffff;"></span>
+</span>
+</a>
+</div>
+<div class="logo">
+<a href="index.html"><picture><source  type='image'><img style="width:160px" alt="Criadero La Victoria" src="img/IMG_0447-removebg-preview.png" class="_rw" data-eio="p" /></picture></a>        </div>
+<div class="acction-right">
+<div class="block-account">
+<a href="#login-popup" data-effect="mfp-zoom-in" class="acc-popup">
+<span>
+<span class="flaticon-profile"></span>
+</span>
+</a>
+</div>
+<div class="lebe-minicart">
+<div class="minicart-canvas-overlay"></div>
+<span class="mini-cart-icon">
+<span class="flaticon-bag"></span>
+<span class="minicart-number">0</span>
+</span>
+<div class="minicart-content shopcart-empty">
+<div class="minicart-content-inner">
+<h3 class="minicart-title">
+Your Cart                </h3>
+<span class="minicart-number-items">
+0                </span>
+<div class="close-minicart"></div>
+<div class="minicart-list-items">
+<div class="empty-wrap">
+<div class="empty-title">No products in the cart.</div>
+
+</div>
+</div>
+<div class="des-cart"><a
+href="">Our Shipping &amp; Return Policy</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider-rev-wrap" >
+<!-- body star --><p class="rs-p-wp-fix"></p>
+<rs-module-wrap id="rev_slider_6_1_wrapper" data-source="gallery" style="background:#0f0f0f;padding:0;">
+<rs-module id="rev_slider_6_1" style="display:none;" data-version="6.1.0">
+<rs-slides>
+<rs-slide data-key="rs-22" data-title="MADAME" data-duration="4000ms" data-anim="ei:d;eo:d;s:d;r:0;t:curtain-2;sl:d;">
+<img src="img/Madam.png" alt="Madame" title="Madame" width="1881" height="960" data-bg="p:right bottom;" data-parallax="off" class="rev-slidebg ewww_webp"  data-eio="j"><noscript><img src="img/Madam.png" alt="Madame" title="Madame" width="1881" height="960" data-bg="p:right bottom;" data-parallax="off" class="rev-slidebg" data-no-retina></noscript>
+<!--
+--><rs-layer
+id="slider-6-slide-22-layer-2" 
+data-type="image"
+data-rsp_ch="on"
+data-xy="x:r,c,c,c;xo:42px,542px,9px,154px;y:t,m,m,m;yo:45px,-309px,-177px,-227px;"
+data-text="l:22;a:inherit;"
+data-dim="w:388px,189px,172px,145px;h:157px,76px,70px,59px;"
+data-frame_0="sX:0.9;sY:0.9;tp:600;"
+data-frame_1="tp:600;e:Power2.easeOut;st:1320;sp:270;sR:1320;"
+data-frame_999="st:w;sp:370;auto:true;"
+style="z-index:8;font-family:Roboto;"
+><picture><source srcset=""  type='image'><img src="img/letter.png" alt="Criadero La Victoria" width="388" height="157" data-no-retina data-eio="p"></picture> 
+</rs-layer><!--
+--><rs-layer
+id="slider-6-slide-22-layer-3" 
+data-type="text"
+data-color="#ffcc00"
+data-rsp_ch="on"
+data-xy="xo:148px,90px,32px,34px;y:m;yo:25px,-29px,9px,-9px;"
+data-text="w:normal;s:37,26,40,40;l:75,53,23,81;fw:700;"
+data-dim="minh:0,none,none,none;"
+data-frame_1="st:720;sR:720;"
+data-frame_999="o:0;st:w;sR:2980;"
+style="z-index:10;font-family:Montserrat;"
+><br />
+<br />
+ </rs-layer><!--
+--><rs-layer
+id="slider-6-slide-22-layer-10" 
+data-type="text"
+data-color="#fff"
+data-rsp_ch="on"
+data-xy="xo:316px,93px,30px,31px;y:t,m,m,m;yo:286px,-122px,-40px,-70px;"
+data-text="w:normal;s:26,18,7,27;l:53,37,16,54;fw:700;a:center;"
+data-dim="minh:0,none,none,none;"
+data-frame_1="st:500;sR:500;"
+data-frame_999="o:0;st:w;sR:3200;"
+style="z-index:5;font-family:Montserrat;"
+>Mejor potranca del trote y galope
+</rs-layer><!--
+--><rs-layer
+id="slider-6-slide-22-layer-15" 
+data-type="text"
+data-color="#fff"
+data-rsp_ch="on"
+data-xy="xo:149px,93px,30px,31px;y:t,m,m,m;yo:135px,-122px,-40px,-70px;"
+data-text="w:normal;s:88,62,27,27;l:177,125,54,54;fw:700;"
+data-dim="minh:0,none,none,none;"
+data-frame_1="st:500;sR:500;"
+data-frame_999="o:0;st:w;sR:3200;"
+style="z-index:12;font-family:Montserrat;"
+>MADAME
+</rs-layer><!--
+--><rs-layer
+id="slider-6-slide-22-layer-18" 
+data-type="text"
+data-color="#fff"
+data-rsp_ch="on"
+data-xy="xo:156px,93px,30px,31px;y:t,m,m,m;yo:111px,-122px,-40px,-70px;"
+data-text="w:normal;s:44,31,13,27;l:88,62,27,54;fw:700;"
+data-dim="minh:0,none,none,none;"
+data-frame_1="st:500;sR:500;"
+data-frame_999="o:0;st:w;sR:3200;"
+style="z-index:11;font-family:Montserrat;"
+>Potranca
+</rs-layer><!--
+--><a
+id="slider-6-slide-22-layer-22" 
+class="rs-layer rev-btn"
+href="" target="_self"
+data-type="button"
+data-color="#000000"
+data-rsp_ch="on"
+data-xy="xo:142px,100px,52px,24px;y:m;yo:195px,117px,140px,166px;"
+data-text="w:normal;s:22,15,19,15;l:25,17,23,19;ls:1,0,0,0;"
+data-dim="minh:0,none,none,none;"
+data-padding="t:15,11,16,13;r:44,31,45,38;b:15,11,16,13;l:44,31,45,38;"
+data-border="bor:30px,30px,30px,30px;"
+data-frame_1="st:1090;sR:1090;"
+data-frame_999="o:0;st:w;sR:2610;"
+data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;"
+
+><i class="fa-chevron-right"></i> 
+</a><!--
+-->						</rs-slide>
+<rs-slide data-key="rs-16" data-title="CRIADERO LA VICTORIA" data-duration="7000" data-anim="ei:d;eo:d;s:d;r:0;t:curtain-2;sl:d;">
+<img src="img/IMG_0657_Original.jpg" title="Inicio" data-parallax="off" class="rev-slidebg" data-no-retina>
+<rs-bgvideo 
+data-video="vc:none;w:100%;h:100%;sta:00:39;end:00:57;l:false;ptimer:true;"
+data-ytid="1UmBNPdon1g"
+data-vatr="version=3&amp;enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://criaderolusitania.com;"
+></rs-bgvideo>
+<!--
+--><rs-layer
+id="slider-6-slide-16-layer-2" 
+data-type="image"
+data-rsp_ch="on"
+data-xy="x:c;y:m;yo:-154px,-41px,-62px,-61px;"
+data-text="l:22;a:inherit;"
+data-dim="w:388px,603px,492px,469px;h:157px,157px,128px,122px;"
+data-frame_0="sX:0.9;sY:0.9;tp:600;"
+data-frame_1="tp:600;e:Power2.easeOut;st:110;sp:1190;sR:110;"
+data-frame_999="st:w;sp:1160;auto:true;"
+style="z-index:1;font-family:Roboto;"
+><picture><source srcset=""  type='image'><img src="img/letter.png" alt="" width="388" height="157" data-no-retina data-eio="p"></picture> 
+</rs-layer><!--
+--><rs-layer
+id="slider-6-slide-16-layer-3" 
+data-type="text"
+data-color="#fff"
+data-rsp_ch="on"
+data-xy="x:c;xo:3px,2px,0,0;y:m;yo:-38px,-27px,-11px,-9px;"
+data-text="w:normal;s:20,14,6,5;l:40,28,12,10;fw:200;a:center;"
+data-dim="minh:0px,none,none,none;"
+data-frame_999="o:0;st:w;"
+style="z-index:14;font-family:Montserrat;"
+>COMBITA - BOYACA 
+</rs-layer><!--
+--><a
+id="slider-6-slide-16-layer-22" 
+class="rs-layer rev-btn"
+href="https://www.instagram.com/criadero_la_victoria_/?igshid=YmMyMTA2M2Y%3D" target="_self"
+data-type="button"
+data-color="#000000"
+data-rsp_ch="on"
+data-xy="xo:845px,601px,263px,219px;yo:479px,340px,149px,124px;"
+data-text="w:normal;s:22,15,6,5;l:25,17,7,6;ls:1,0,0,0;"
+data-dim="minh:0,none,none,none;"
+data-padding="t:15,11,5,4;r:44,31,14,12;b:15,11,5,4;l:44,31,14,12;"
+data-border="bor:30px,30px,30px,30px;"
+data-frame_999="o:0;st:w;"
+data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;"
+style="z-index:13;background-color:#e6b23a;font-family:Roboto;text-transform:uppercase;"
+
+>VER IG <i class=""></i> 
+</a><!--
+-->						</rs-slide>
+</rs-slides>
+<rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+</rs-module>
+<script type="text/javascript">
+setREVStartSize({c: 'rev_slider_6_1',rl:[1240,1024,778,480],el:[960,768,680,570],gw:[1920,1366,600,500],gh:[960,768,680,570],layout:'fullscreen',offsetContainer:'#wpadminbar',offset:'',mh:"0"});
+var	revapi6,
+tpj;
+jQuery(function() {
+tpj = jQuery;
+if(tpj("#rev_slider_6_1").revolution == undefined){
+revslider_showDoubleJqueryError("#rev_slider_6_1");
+}else{
+revapi6 = tpj("#rev_slider_6_1").show().revolution({
+jsFileLocation:"//criaderolusitania.com/wp-content/plugins/revslider/public/assets/js/",
+sliderLayout:"fullscreen",
+dottedOverlay:"threexthree",
+visibilityLevels:"1240,1024,778,480",
+gridwidth:"1920,1366,600,500",
+gridheight:"960,768,680,570",
+minHeight:"",
+spinner:"spinner0",
+editorheight:"960,768,680,570",
+responsiveLevels:"1240,1024,778,480",
+fullScreenOffsetContainer:"#wpadminbar",
+disableProgressBar:"on",
+navigation: {
+mouseScrollNavigation:false,
+onHoverStop:false,
+touch: {
+touchenabled:true,
+touchOnDesktop:true
+}
+},
+parallax: {
+levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+type:"mouse"
+},
+fallbacks: {
+allowHTML5AutoPlayOnAndroid:true
+},
+});
+}
+});
+</script>
+</rs-module-wrap>
+<!-- END REVOLUTION SLIDER -->
+</div >
+</header>		    <main class="site-main  main-container no-sidebar">
+<div class="container">
+<div class="row">
+<div class="main-content col-sm-12">
+<div class="page-main-content">
+<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1547004834731 vc_row-no-padding responsive_js_composer_custom_css_1412614706"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 responsive_js_composer_custom_css_241638778"><div class="vc_column-inner vc_custom_1546417513305"><div class="wpb_wrapper">            <div class="lebe-banner style-13     lebe_custom_css_420629098 lebe-wow fadeInUp   responsive_js_composer_custom_css_681241501">
+<div class="banner-inner ">
+<figure class="banner-thumb ">
+<a target="_self" href="">
+<picture><source srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-1.jpg.webp 518w, https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-1-300x292.jpg.webp 300w" sizes='(max-width: 518px) 100vw, 518px' type='image/webp'><img width="518" height="504" src="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-1.jpg" class="attachment-full size-full" alt="Criadero de Caballos " loading="lazy" srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-1.jpg 518w, https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-1-300x292.jpg 300w" sizes="(max-width: 518px) 100vw, 518px" data-eio="p" /></picture>                            </a>
+</figure>
+<div class="banner-info ">
+<div class="banner-info-inner ">
+<h6 class="title">
+CHALANERIA                            </h6>
+<h3 class="bigtitle">
+ Montador y Cabalgatas                                                                   </h3>
+<a class="button" target="_self"
+href=""><span>SABER MAS</span></a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 responsive_js_composer_custom_css_977570267"><div class="vc_column-inner vc_custom_1546417547146"><div class="wpb_wrapper">            <div class="lebe-banner style-13     lebe_custom_css_433372282 lebe-wow fadeInUp   responsive_js_composer_custom_css_1612805122">
+<div class="banner-inner ">
+<figure class="banner-thumb ">
+<a target="_self" href="">
+<picture><source srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-4.jpg.webp 518w, https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-4-300x292.jpg.webp 300w" sizes='(max-width: 518px) 100vw, 518px' type='image/webp'><img width="518" height="504" src="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-4.jpg" class="attachment-full size-full" alt="Criadero de Caballos" loading="lazy" srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-4.jpg 518w, https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-4-300x292.jpg 300w" sizes="(max-width: 518px) 100vw, 518px" data-eio="p" /></picture>                            </a>
+</figure>
+<div class="banner-info ">
+<div class="banner-info-inner ">
+<h6 class="title">
+ZONAS HUMEDAS                              </h6>
+<h3 class="bigtitle">
+Sauna, Jacuzzi, Pista, Piqueteadero y mas.                                                                   </h3>
+<a class="button" target="_self"
+href=""><span>VER MÁS</span></a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4 responsive_js_composer_custom_css_613038701"><div class="vc_column-inner vc_custom_1546417561406"><div class="wpb_wrapper">            <div class="lebe-banner style-13     lebe_custom_css_1140654227 lebe-wow fadeInUp   responsive_js_composer_custom_css_551816170">
+<div class="banner-inner ">
+<figure class="banner-thumb ">
+<a target="_self" href="https://criaderolusitania.com/contactenos/">
+<picture><source srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-3.jpg.webp 518w, https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-3-300x292.jpg.webp 300w" sizes='(max-width: 518px) 100vw, 518px' type='image/webp'><img width="518" height="504" src="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-3.jpg" class="attachment-full size-full" alt="Criadero de Caballos Bogotá" loading="lazy" srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-3.jpg 518w, https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-bogota-3-300x292.jpg 300w" sizes="(max-width: 518px) 100vw, 518px" data-eio="p" /></picture>                            </a>
+</figure>
+<div class="banner-info ">
+<div class="banner-info-inner ">
+<h6 class="title">
+ASESORÍA                                </h6>
+<h3 class="bigtitle">
+Contamos con la mejor equipacion.                                                                  </h3>
+<a class="button" target="_self"
+href="https://api.whatsapp.com/send/?phone=573138525030&text&type=phone_number&app_absent=0"><span>CONTÁCTO</span></a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1546417125627 responsive_js_composer_custom_css_1512812836"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">            <div class="lebe-iconbox  style-07 lebe_custom_css_668260482 lebe-wow fadeInUp  responsive_js_composer_custom_css_1441922244">
+<div class="iconbox-inner">
+<div class="icon"
+>
+<picture><source srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-caballos-cundinamarca.png.webp"  type='image'><img width="105" height="120" src="img/IMG_0447-removebg-preview.png" class="attachment-full size-full" alt="Criadero de Combita" loading="lazy" data-eio="p" /></picture>                                            </div>
+<div class="content">
+<h4 class="title">
+VISION COMO CRIADERO                          </h4>
+<div class="desc">
+A solo 10 minutos de Combita se encuentra el CRIADERO LA VICTORIA. Llevamos un legado de mas de dos generaciones, en donde esta pasión corre por nuestras venas, como familia hemos obtenido los títulos mas importantes en la region           </div>
+</div>
+<a class="button" target="_self"
+href="https://www.instagram.com/criadero_la_victoria_/?igshid=YmMyMTA2M2Y%3D" >SIGUENOS</a>
+</div>
+</div>
+</div></div>
+</div></div>
+<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="2" data-vc-parallax-image="https://criaderolusitania.com/wp-content/uploads/2019/10/cabaleriza.jpg" class="vc_row wpb_row vc_row-fluid vc_custom_1572030866160 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving responsive_js_composer_custom_css_240197898"><div class="wpb_column vc_column_container vc_col-sm-12 responsive_js_composer_custom_css_2077521563">
+<div class="vc_column-inner"><div class="wpb_wrapper"><h2 style="font-size: 30px;color: #fcb900;text-align: center" class="vc_custom_heading vc_custom_1572031095410 responsive_js_composer_custom_css_134594702" >Beneficios</h2>
+	<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner"><div class="wpb_wrapper">
+			<div class="vc_icon_element vc_icon_element-outer wpb_animate_when_almost_visible wpb_fadeIn fadeIn responsive_js_composer_custom_css_2140668668 vc_icon_element-align-center">
+	<div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey" >
+		<span class="vc_icon_element-icon fa fa-diamond" ></span>
+		<a class="vc_icon_element-link" href=""  title="Galería" target="_self"></a>
+	</div></div><h2 style="font-size: 16px;color: #ffffff;line-height: 30px;text-align: center;font-family:Montserrat;font-weight:700;font-style:normal" class="vc_custom_heading responsive_js_composer_custom_css_1306433175" ><a href="https://criaderolusitania.com/galeria/" title="Galería">Mejores de la zona</a></h2></div></div></div>
+	<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_icon_element vc_icon_element-outer wpb_animate_when_almost_visible wpb_fadeIn fadeIn responsive_js_composer_custom_css_777615668 vc_icon_element-align-center"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey" >
+		<span class="vc_icon_element-icon fa fa-credit-card" >
+		</span><a class="vc_icon_element-link" href=""  title="Galería" target="_self"></a>
+	</div></div><h2 style="font-size: 16px;color: #ffffff;line-height: 30px;text-align: center;font-family:Montserrat;font-weight:700;font-style:normal" class="vc_custom_heading responsive_js_composer_custom_css_519575994" >
+		<a href="" title="Financiación">Exelentes Planes</a></h2></div></div></div>
+		<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner">
+			<div class="wpb_wrapper"><div class="vc_icon_element vc_icon_element-outer wpb_animate_when_almost_visible wpb_fadeIn fadeIn responsive_js_composer_custom_css_400710533 vc_icon_element-align-center"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey" ><span class="vc_icon_element-icon fa fa-users" >
+			</span><a class="vc_icon_element-link" href="https://api.whatsapp.com/send/?phone=573138525030&text&type=phone_number&app_absent=0"  title="" target="_self"></a></div></div><h2 style="font-size: 16px;color: #ffffff;line-height: 30px;text-align: center;font-family:Montserrat;font-weight:700;font-style:normal" class="vc_custom_heading responsive_js_composer_custom_css_133688748" >
+				<a href="" title="Financiación">Asesoria Unica</a></h2></div></div></div></div></div></div></div></div>
+				<div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding responsive_js_composer_custom_css_1791651496"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">       
+					     <div class="lebe-banner style-09     lebe_custom_css_1436898936    responsive_js_composer_custom_css_1734532857">
+<div class="banner-inner ">
+<figure class="banner-thumb ">
+<a target="_self" href="">
+<picture><source srcset="" sizes='(max-width: 1920px) 100vw, 1920px' type='image'><img width="1920" height="1015" src="img/Tres.png" class="attachment-full size-full" alt="Galería Lusitania" loading="lazy" srcset="" sizes="(max-width: 1920px) 100vw, 1920px" data-eio="p" /></picture>                            </a>
+</figure>
+<div class="banner-info " >
+<div class="banner-info-inner ">
+<h6 class="title">
+GALERÍA  </h6>
+<h3 class="bigtitle" style="color:goldenrod" >
+NUESTRA PASIÓN SON LOS CABALLOS                   </h3>
+<div class="desc" style="color:rgba(225, 150, 21, 0.858)">
+Conozca mas de nuestro criadero y ejemplares.                                </div>
+<a class="button" target="_self" 
+href="#caballos"><span>Galería</span ></a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding responsive_js_composer_custom_css_792121247"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">            <div class="lebe-products no-label   lebe_custom_css_1774896763 lebe-wow fadeInUp style-5  responsive_js_composer_custom_css_12741313">
+<ul id="lebe_custom_css_1774896763"
+class="product-grid row auto-clear equal-container better-height nav-circle">
+<li id="post-7552" class="product-item products style-5 rows-space-0 col-bg-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ts-6 famiau-wow-continuous lebe-wow fadeInUp post-7552 product type-product status-publish has-post-thumbnail product_cat-yeguas-donantes-de-embriones first instock shipping-taxable purchasable product-type-simple">
+<div class="product-inner  equal-elem">
+<div class="product-thumb">
+<div class="flash-wrap">
+<div class="flash">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+	 
+</div>
+<a href="?add-to-cart=2948" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2948" data-product_sku="" aria-label="Añade &ldquo;BABILONIA&rdquo; a tu carrito" rel="nofollow">Añadir al carrito</a><a href="#" class="button yith-wcqv-button" data-product_id="2948">Vista rápida</a><a href="#" class="button yith-wcqv-button" data-product_id="2948">Vista rápida</a>            </div>
+</div>
+</div>
+</div>                                </li>
+</ul>
+<a class="view-products" target="_self"
+href=""><span>Proximamente</span></a>
+</div>
+
+
+
+
+
+
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1572556244824 responsive_js_composer_custom_css_1775968096">
+<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="vc_icon_element vc_icon_element-outer wpb_animate_when_almost_visible wpb_fadeIn fadeIn responsive_js_composer_custom_css_436021307 vc_icon_element-align-center">
+	<div class="vc_icon_element-inner vc_icon_element-color-black vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey" >
+		<span class="vc_icon_element-icon fa fa-whatsapp"></span> 
+		<a class="vc_icon_element-link" href="https://api.whatsapp.com/send?phone=573138525030"  title="Galería" target="_self"></a></div></div><h3 style="font-size: 20px;color: #000000;line-height: 40px;text-align: center;font-family:Montserrat;font-weight:400;font-style:normal" class="vc_custom_heading responsive_js_composer_custom_css_1301310475" ><a href="https://api.whatsapp.com/send?phone=573138525030" title="Galería">WhatsApp<br />
+313 852 5030</a></h3></div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_icon_element vc_icon_element-outer wpb_animate_when_almost_visible wpb_fadeIn fadeIn responsive_js_composer_custom_css_2139207222 vc_icon_element-align-center"><div class="vc_icon_element-inner vc_icon_element-color-black vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey" ><span class="vc_icon_element-icon fa fa-envelope-o" ></span><a class="vc_icon_element-link" href="https://api.whatsapp.com/send?phone=573138525030"  title="Galería" target="_self"></a></div></div><h3 style="font-size: 20px;color: #000000;line-height: 40px;text-align: center;font-family:Montserrat;font-weight:400;font-style:normal" class="vc_custom_heading responsive_js_composer_custom_css_1409882049" ><a href="/cdn-cgi/l/email-protection#e0839289818485928f8c95938994818e8981a0879295908f87818e81898ece838f8d" title="Galería">Correo:<br />
+<span class="__cf_email__" data-cfemail="2744554e46434255484b52544e5346494e46674055525748404649464e490944484a">[email&#160;protected]</span></a></h3></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1572303024501 vc_row-no-padding responsive_js_composer_custom_css_189435405"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text  responsive_js_composer_custom_css_251923666 responsive_js_composer_custom_css_251923666" ><span class="vc_sep_holder vc_sep_holder_l"><span  style="border-color:#dcdcdc;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  style="border-color:#dcdcdc;" class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<div class="vc_row-full-width vc_clearfix"></div>
+<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1572030400300 vc_row-no-padding responsive_js_composer_custom_css_1630273082"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1572030424781 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex responsive_js_composer_custom_css_182651105"><div class="wpb_column vc_column_container vc_col-sm-6 responsive_js_composer_custom_css_1027937460"><div class="vc_column-inner vc_custom_1571855601998"><div class="wpb_wrapper"><h2 style="font-size: 30px;color: #ffffff;line-height: 40PX;text-align: right;font-family:Montserrat;font-weight:700;font-style:normal" class="vc_custom_heading vc_custom_1571856766626 responsive_js_composer_custom_css_412966968" >SERVICIO PERSONALIZADO</h2><h3 style="font-size: 16px;color: #ffffff;line-height: 24PX;text-align: right;font-family:Montserrat;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1571933040756 responsive_js_composer_custom_css_520496031" >Contacte a nuestros asesores y reciba más información acerca de ejemplares, saltos, embriones y mas servicios.</h3></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">            <div class="lebe-title style1 light  lebe_custom_css_853301300   responsive_js_composer_custom_css_255249584">
+<div class="title-inner">
+<h3 class="block-title">
+
+CONTACTANOS                      </h3>
+</div>
+</div>
+<div role="form" class="wpcf7" id="wpcf7-f2956-p3028-o1" lang="es-ES" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f2956-p3028-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="2956" />
+<input type="hidden" name="_wpcf7_version" value="5.6.2" />
+<input type="hidden" name="_wpcf7_locale" value="es_ES" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2956-p3028-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="3028" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7cf_hidden_group_fields" value="[]" />
+<input type="hidden" name="_wpcf7cf_hidden_groups" value="[]" />
+<input type="hidden" name="_wpcf7cf_visible_groups" value="[]" />
+<input type="hidden" name="_wpcf7cf_repeaters" value="[]" />
+<input type="hidden" name="_wpcf7cf_steps" value="{}" />
+<input type="hidden" name="_wpcf7cf_options" value="{&quot;form_id&quot;:2956,&quot;conditions&quot;:[],&quot;settings&quot;:{&quot;animation&quot;:&quot;yes&quot;,&quot;animation_intime&quot;:200,&quot;animation_outtime&quot;:200,&quot;conditions_ui&quot;:&quot;normal&quot;,&quot;notice_dismissed&quot;:false}}" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<div class="contact-form-container">
+<div class="row">
+<div class="col-sm-12">
+<label><span style="color:#fff; margin-bottom:20px;" class="contact-label">Nombre<span class="required"></span></span><br />
+<span class="wpcf7-form-control-wrap" data-name="nombre"><input type="text" name="nombre" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label>
+</div>
+<div class="col-sm-12">
+<label><span style="color:#fff; margin-bottom:20px;" class="contact-label">Correo<span class="required"></span></span><br />
+<span class="wpcf7-form-control-wrap" data-name="correo"><input type="email" name="correo" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </label>
+</div>
+<div class="col-sm-12">
+<label><span style="color:#fff; margin-bottom:20px;" class="contact-label">Teléfono de Contacto<span class="required"></span></span><br />
+<span class="wpcf7-form-control-wrap" data-name="tel"><input type="tel" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" /></span> </label>
+</div>
+<div class="col-sm-12">
+<div class="contact-submit">
+<input type="submit" value="ENVIAR" class="wpcf7-form-control has-spinner wpcf7-submit" />
+</div>
+</div>
+</div>
+</div>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+				                    <footer class="footer lebe-footer-builder footer-id-3079">
+<div class="container">
+<section data-vc-full-width="true" data-vc-full-width-init="false" class=" vc_section vc_custom_1546936417866 vc_section-has-fill responsive_js_composer_custom_css_682329210"><div class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-flex responsive_js_composer_custom_css_1372979945"><div class="center767 wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 responsive_js_composer_custom_css_1875003769"><div class="vc_column-inner vc_custom_1546936359310"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6 responsive_js_composer_custom_css_1899042007"><div class="vc_column-inner"><div class="wpb_wrapper">            <div class="lebe-custommenu style-01 light   lebe_custom_css_514750025   responsive_js_composer_custom_css_2052681693">
+<h2 class="widgettitle">CRIADERO</h2>
+<ul id="menu-menu-footer-1" class="menu"><li id="menu-item-3085" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3028 current_page_item menu-item-3085 active"><a title="Inicio" href="">Inicio</a></li>
+<li id="menu-item-3285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3285"><a title="Pagos" href="https://api.whatsapp.com/send/?phone=573208839566&text&type=phone_number&app_absent=0">Pagos</a></li>
+<li id="menu-item-3086" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3086"><a title="Acerca de" href="https://drive.google.com/file/d/1aCcRctvdvnNSoOLGW-2xld7mWq9U6FAk/view?usp=sharing">Spa</a></li>
+
+</ul>				            </div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">            <div class="lebe-custommenu style-01 light   lebe_custom_css_345032580   responsive_js_composer_custom_css_1548971">
+<h2 class="widgettitle">SERVICIOS</h2>
+<ul id="menu-menu-footer-2" class="menu"><li id="menu-item-3091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3091"><a title="Financiación" href="">Pesebreras</a></li>
+<li id="menu-item-3090" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3090"><a title="Yeguas Donantes de Embriones" href="">Zonas Humedas</a></li>
+<li id="menu-item-3253" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3253"><a title="Saltos" href="https://criaderolusitania.com/categorias/saltos-reproductores/">Saltos</a></li>
+<li id="menu-item-3286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3286"><a title="Contáctenos" href="https://api.whatsapp.com/send/?phone=573138525030&text&type=phone_number&app_absent=0">Contáctenos</a></li>
+</ul>				            </div>
+</div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_hidden-sm vc_hidden-xs vc_col-has-fill responsive_js_composer_custom_css_750826547"><div class="vc_column-inner vc_custom_1546500650649"><div class="wpb_wrapper">
+<div class="wpb_single_image wpb_content_element vc_align_center  responsive_js_composer_custom_css_1792610026">
+<figure class="wpb_wrapper vc_figure">
+<a href="" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><picture><source srcset="https://criaderolusitania.com/wp-content/uploads/2019/10/criadero-de-caballos-colombia.png.webp"  type='image'><img width="170" height="147" src="img/IMG_0447-removebg-preview.png" class="vc_single_image-img attachment-full" alt="Criadero de Caballos Colombia" loading="lazy" data-eio="p" /></picture></a>
+</figure>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 responsive_js_composer_custom_css_977196938"><div class="vc_column-inner vc_custom_1546500673424"><div class="wpb_wrapper">            <div class="lebe-newsletter style-05 light  lebe_custom_css_979933610   responsive_js_composer_custom_css_2145256474">
+<div class="newsletter-inner">
+<div class="newsletter-top">
+<h3 class="newsletter-title">Mantente informado </h3>
+<div class="newsletter-description">Unete a nuestra familia Victorista </div>
+</div>
+<form class="newsletter-form-wrap">
+<div class="newsletter-form-wrap-inner">
+<input class="email" type="email" name="email"
+placeholder="Escriba su email">
+<button type="submit" name="submit_button"
+class="btn-submit submit-newsletter">
+<span>
+ENVIAR                                        </span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div></div></div></div></section><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding responsive_js_composer_custom_css_121457266"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text  responsive_js_composer_custom_css_362927057 responsive_js_composer_custom_css_362927057" ><span class="vc_sep_holder vc_sep_holder_l"><span  style="border-color:#2b2b2b;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  style="border-color:#2b2b2b;" class="vc_sep_line"></span></span>
+</div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1546585849264 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex responsive_js_composer_custom_css_604464320"><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-4 responsive_js_composer_custom_css_814211667"><div class="vc_column-inner"><div class="wpb_wrapper">            <div class="lebe-socials  center991 lebe_custom_css_1067411755  style-02  responsive_js_composer_custom_css_1319597795">
+<div class="socials-inner">
+<div class="socials">
+
+target="_blank">
+<i class="fa fa-instagram"></i>
+</a>
+
+target="_blank">
+<i class="fa fa-youtube-play"></i>
+</a>
+
+target="_blank">
+<i class="fa fa-facebook"></i>
+</a>
+</div>
+</div>
+</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-4 responsive_js_composer_custom_css_621767971"><div class="vc_column-inner"><div class="wpb_wrapper"><div style="font-size: 13px;color: #454545;line-height: 20px;text-align: center" class="vc_custom_heading responsive_js_composer_custom_css_787922888" ><a href="https://criaderolusitania.com/">© 2023 CRIADERO LA VICTORIA - BOYACA</a></div><div style="font-size: 13px;color: #454545;line-height: 20px;text-align: center" class="vc_custom_heading responsive_js_composer_custom_css_247863094" ><a href="https://dementeweb.com"></a></div></div></div></div><div class="center991 wpb_column vc_column_container vc_col-sm-4 vc_col-md-4 responsive_js_composer_custom_css_298459366"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="wpb_single_image wpb_content_element vc_align_right   center991 responsive_js_composer_custom_css_2062453804">
+<figure class="wpb_wrapper vc_figure">
+
+</figure>
+</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+</div>
+</footer>
+<div class="totop-holder">
+<a href="#" class="backtotop">
+<i class="fa fa-angle-up" aria-hidden="true"></i> 
+</a>
+</div>
+</div> <!-- End .page-wrapper -->
+<div id="yith-quick-view-modal">
+<div class="yith-quick-view-overlay"></div>
+<div class="yith-wcqv-wrapper">
+<div class="yith-wcqv-main">
+<div class="yith-wcqv-head">
+<a href="#" id="yith-quick-view-close" class="yith-wcqv-close">X</a>
+</div>
+<div id="yith-quick-view-content" class="woocommerce single-product lebe-flex"></div>
+</div>
+</div>
+</div>
+<div id="login-popup" class="woocommerce-account md-content mfp-with-anim mfp-hide">
+<div class="lebe-modal-content">
+<div class="woocommerce">
+<div class="woocommerce-notices-wrapper"></div>
+<div class="customer-form" id="customer_login_63610bc506876">
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="login_63610bc506878"
+aria-labelledby="login-tab-63610bc50687b">
+<div class="login-icon"><span class="flaticon-profile"></span></div>
+<p class="des-login">Create an account to expedite future checkouts, track order history &amp; receive emails, discounts, &amp; special offers</p>
+<div class="login-form block-form">
+<form method="post" class="login">
+<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+<input placeholder="Username " type="text"
+class="woocommerce-Input woocommerce-Input--text input-text" name="username"
+id="username_63610bc5069c2"
+value=""/>
+</p>
+<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+<input placeholder="Password"
+class="woocommerce-Input woocommerce-Input--text input-text" type="password"
+name="password" id="password_63610bc5069c8"/>
+</p>
+<p class="form-row">
+<input type="hidden" id="woocommerce-login-nonce-63610bc5069de"
+name="woocommerce-login-nonce" value="8f46269bee"/>
+<input type="hidden" name="_wp_http_referer" value="/" />                        <label for="rememberme_63610bc50687a" class="rememberme">
+<input class="woocommerce-Input woocommerce-Input--checkbox" name="rememberme"
+type="checkbox" id="rememberme_63610bc50687a"
+value="forever"/>
+<span>Remember me</span>
+</label>
+<a class="woocommerce-LostPassword lost_password"
+href="https://criaderolusitania.com/mi-cuenta/lost-password/">Lost your password?</a>
+<input type="submit" class="woocommerce-Button button" name="login"
+value="Login"/>
+</p>
+<input type="hidden" name="redirect" value="https://criaderolusitania.com/ " >
+</form>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="register_63610bc506879"
+aria-labelledby="register-tab-63610bc50687c">
+<div class="login-icon">
+<span class="flaticon-login"></span>
+<p class="des-res">Register</p>
+</div>
+<div class="register-form block-form">
+<form method="post" class="register">
+<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+<input placeholder="Email address" type="email"
+class="woocommerce-Input woocommerce-Input--text input-text" name="email"
+id="reg_email_63610bc506bb9"
+value=""/>
+</p>
+<!-- Spam Trap -->
+<div style="left: -999em; position: absolute;"><label
+for="trap_63610bc50687d">Anti-spam</label><input
+type="text"
+name="email_2"
+id="trap_63610bc50687d"
+tabindex="-1"
+autocomplete="off"/>
+</div>
+<div class="woocommerce-privacy-policy-text"><p>Su información personal será usada exclusivamente para el procesamiento de su orden como se describe en nuestra <a href="https://criaderolusitania.com/politica-de-privacidad/" class="woocommerce-privacy-policy-link" target="_blank">política de privacidad</a>.</p>
+</div>					
+<p class="woocomerce-FormRow form-row">
+<input type="hidden" id="woocommerce-register-nonce-63610bc506e56"
+name="woocommerce-register-nonce" value="b0b1747da4"/>
+<input type="hidden" name="_wp_http_referer" value="/" />                        <input type="submit" class="woocommerce-Button button" name="register"
+value="Register"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<div class="spec"><span>Or</span></div>
+<ul class="nav nav-tabs nav-tabs-responsive" role="tablist">
+<li role="presentation" class="active">
+<a href="#login_63610bc506878" role="tab"
+id="login-tab-63610bc50687b" data-toggle="tab"
+aria-controls="login_63610bc506878">
+Back to login            </a>
+</li>
+<li role="presentation">
+<a href="#register_63610bc506879" id="register-tab-63610bc50687c"
+role="tab" data-toggle="tab" aria-controls="register_63610bc506879">
+Create an account            </a>
+</li>
+</ul>
+</div>
+</div>            </div>
+</div>
+<div class="joinchat joinchat--left joinchat--btn" data-settings='{"telephone":"573208839566","mobile_only":false,"button_delay":3,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":10,"message_badge":false,"message_send":"","message_hash":""}'>
+<div class="joinchat__button">
+<div class="joinchat__button__open"></div>
+</div>
+</div>
+<!-- <link rel='stylesheet' property='stylesheet' id='rs-icon-set-fa-icon-css' href='https://criaderolusitania.com/wp-content/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/jnjfwvoz/fk18l.css" media="all"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CMontserrat:700%2C200" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+(function () {
+var c = document.body.className;
+c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+document.body.className = c;
+})();
+</script>
+<script type="text/javascript">
+if(typeof revslider_showDoubleJqueryError === "undefined") {
+function revslider_showDoubleJqueryError(sliderID) {
+var err = "<div class='rs_error_message_box'>";
+err += "<div class='rs_error_message_oops'>Oops...</div>";
+err += "<div class='rs_error_message_content'>";
+err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' ->  'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+err += "</div>";
+err += "</div>";
+jQuery(sliderID).show().html(err);
+}
+}		</script>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="pswp__bg"></div>
+<div class="pswp__scroll-wrap">
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" aria-label="Cerrar (Esc)"></button>
+<button class="pswp__button pswp__button--share" aria-label="Compartir"></button>
+<button class="pswp__button pswp__button--fs" aria-label="Cambiar a pantalla completa"></button>
+<button class="pswp__button pswp__button--zoom" aria-label="Ampliar/Reducir"></button>
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" aria-label="Anterior (flecha izquierda)"></button>
+<button class="pswp__button pswp__button--arrow--right" aria-label="Siguiente (flecha derecha)"></button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- <link rel='stylesheet' id='vc_animate-css-css'  href='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/dsdwlo5a/fk18l.css" media="all"/>
+<link rel='stylesheet' id='vc_google_fonts_montserratregular700-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700'  media='all' />
+<!-- <link rel='stylesheet' id='photoswipe-css'  href='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css'  media='all' /> -->
+<!-- <link rel='stylesheet' id='photoswipe-default-skin-css'  href='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css'  media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//criaderolusitania.com/wp-content/cache/wpfc-minified/q9mzacnf/fk18l.css" media="all"/>
+<script  src='https://criaderolusitania.com/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min.js' id='jquery-selectBox-js'></script>
+<script  src='//criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min.js' id='prettyPhoto-js'></script>
+<script type='text/javascript' id='jquery-yith-wcwl-js-extra'>
+/* <![CDATA[ */
+var yith_wcwl_l10n = {"ajax_url":"\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","multi_wishlist":"","hide_add_button":"1","enable_ajax_loading":"","ajax_loader_url":"https:\/\/criaderolusitania.com\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg","remove_from_wishlist_after_add_to_cart":"1","is_wishlist_responsive":"1","time_to_close_prettyphoto":"3000","fragments_index_glue":".","reload_on_found_variation":"1","mobile_media_query":"768","labels":{"cookie_disabled":"Lo siento, pero esta caracter\u00edstica solo est\u00e1 disponible si las cookies de tu navegador est\u00e1n activadas.","added_to_cart_message":"<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Producto a\u00f1adido al carrito con \u00e9xito<\/div><\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem","load_mobile_action":"load_mobile","delete_item_action":"delete_item","save_title_action":"save_title","save_privacy_action":"save_privacy","load_fragments":"load_fragments"},"nonce":{"add_to_wishlist_nonce":"d30f74590d","remove_from_wishlist_nonce":"0660d10723","reload_wishlist_and_adding_elem_nonce":"b217f93153","load_mobile_nonce":"0d0f8cd98c","delete_item_nonce":"0c96f8a246","save_title_nonce":"ddff67a0fb","save_privacy_nonce":"5a7bee555f","load_fragments_nonce":"f5e9144a0a"}};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min.js' id='jquery-yith-wcwl-js'></script>
+<script  src='https://criaderolusitania.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script  src='https://criaderolusitania.com/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/criaderolusitania.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/lib/bower/flexslider/jquery.flexslider-min.js' id='flexslider-js'></script>
+<script type='text/javascript' id='alg-wc-pop-frontend-js-extra'>
+/* <![CDATA[ */
+var alg_wc_pop_data_object = {"force_decimals":"","force_decimal_width":"0"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/product-open-pricing-name-your-price-for-woocommerce/includes/js/alg-wc-pop-frontend.js' id='alg-wc-pop-frontend-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_20090454991be7854a367e7547a34d23","fragment_name":"wc_fragments_20090454991be7854a367e7547a34d23","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' id='fami-mailchimp-js-extra'>
+/* <![CDATA[ */
+var fami_mailchimp = {"ajaxurl":"https:\/\/criaderolusitania.com\/wp-admin\/admin-ajax.php","security":"953ce377c4"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/lebe-toolkit//includes/classes/mailchimpv3/mailchimp.js' id='fami-mailchimp-js'></script>
+<script type='text/javascript' id='yith-wcqv-frontend-js-extra'>
+/* <![CDATA[ */
+var yith_qv = {"ajaxurl":"\/wp-admin\/admin-ajax.php","loader":"https:\/\/criaderolusitania.com\/wp-content\/plugins\/yith-woocommerce-quick-view\/assets\/image\/qv-loader.gif","lang":""};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/yith-woocommerce-quick-view/assets/js/frontend.min.js' id='yith-wcqv-frontend-js'></script>
+<script  src='https://criaderolusitania.com/wp-includes/js/imagesloaded.min.js' id='imagesloaded-js'></script>
+<script  src='https://criaderolusitania.com/wp-includes/js/underscore.min.js' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-includes/js/wp-util.min.js' id='wp-util-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-variation-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Lo siento, no hay productos que igualen tu selecci\u00f3n. Por favor, escoge una combinaci\u00f3n diferente.","i18n_make_a_selection_text":"Elige las opciones del producto antes de a\u00f1adir este producto a tu carrito.","i18n_unavailable_text":"Lo siento, este producto no est\u00e1 disponible. Por favor, elige otra combinaci\u00f3n."};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js' id='wc-add-to-cart-variation-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/wow.min.js' id='wow-js'></script>
+<script type='text/javascript' id='lebe-script-js-extra'>
+/* <![CDATA[ */
+var lebe_theme_frontend = {"ajaxurl":"https:\/\/criaderolusitania.com\/wp-admin\/admin-ajax.php","security":"1c66a16bb2","main_menu_break_point":"1199","text":{"load_more":"Load More","no_more_product":"No More Product","more_detail":"More Details","less_detail":"Less Details","back_to_menu_text":"Back to &quot;{{menu_name}}&quot;"},"animation_on_scroll":"yes"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/themes/lebe/assets/js/functions.js' id='lebe-script-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js' id='joinchat-js'></script>
+<script type='text/javascript' id='wpcf7cf-scripts-js-extra'>
+/* <![CDATA[ */
+var wpcf7cf_global_settings = {"ajaxurl":"https:\/\/criaderolusitania.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/cf7-conditional-fields/js/scripts.js' id='wpcf7cf-scripts-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/ziss/assets/vendors/enscroll/enscroll-0.6.2.min.js' id='enscroll-0.6.2.min-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/ziss/assets/vendors/waitForImages/jquery.waitforimages.min.js' id='waitforimages-js'></script>
+<script type='text/javascript' id='ziss-frontend-js-extra'>
+/* <![CDATA[ */
+var ziss = {"text":[],"html":{"popup":"<div class=\"ziss-popup-wrap\">\r\n\t\t\t\t\t\t\t\t<div class=\"ziss-popup-inner\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-content\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-body\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"ziss-close-popup\"><i class=\"fa fa-times\"><\/i><\/a>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=ziss-popup-body-lr-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-body-left\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-body-right ziss-custom-scroll\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"ziss-popup-nav ziss-popup-nav-prev\"><i class=\"fa fa-angle-left\"><\/i><\/a>\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"ziss-popup-nav ziss-popup-nav-next\"><i class=\"fa fa-angle-right\"><\/i><\/a>\r\n\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t<div class=\"ziss-popup-backdrop\"><\/div>\r\n\t\t\t\t\t\t\t<\/div>","popup_product_tmp":"<div data-product_id=\"{{product_id}}\" class=\"ziss-product-wrap ziss-product-wrap-{{product_id}}\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-product-thumb-wrap\"><img class=\"ziss-product-thumb\" width=\"{{thumb_width}}\" height=\"{{thumb_height}}\" src=\"{{thumb_src}}\" alt=\"\" \/><\/div>\r\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"ziss-product-title\">{{title}}<\/h4>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-product-info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-price-wrap\">{{price_html}}<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-rating-wrap\">{{rating_html}}<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-add-to-cart-wrap\">{{add_to_cart_html}}<\/div>\r\n\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t<\/div>"}};
+var ziss = {"text":[],"html":{"popup":"<div class=\"ziss-popup-wrap\">\r\n\t\t\t\t\t\t\t\t<div class=\"ziss-popup-inner\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-content\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-body\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"ziss-close-popup\"><i class=\"fa fa-times\"><\/i><\/a>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=ziss-popup-body-lr-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-body-left\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-popup-body-right ziss-custom-scroll\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"ziss-popup-nav ziss-popup-nav-prev\"><i class=\"fa fa-angle-left\"><\/i><\/a>\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"ziss-popup-nav ziss-popup-nav-next\"><i class=\"fa fa-angle-right\"><\/i><\/a>\r\n\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t<div class=\"ziss-popup-backdrop\"><\/div>\r\n\t\t\t\t\t\t\t<\/div>","popup_product_tmp":"<div data-product_id=\"{{product_id}}\" class=\"ziss-product-wrap ziss-product-wrap-{{product_id}}\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-product-thumb-wrap\"><img class=\"ziss-product-thumb\" width=\"{{thumb_width}}\" height=\"{{thumb_height}}\" src=\"{{thumb_src}}\" alt=\"\" \/><\/div>\r\n\t\t\t\t\t\t\t\t\t\t<h4 class=\"ziss-product-title\">{{title}}<\/h4>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-product-info-wrap\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-price-wrap\">{{price_html}}<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-rating-wrap\">{{rating_html}}<\/div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"ziss-add-to-cart-wrap\">{{add_to_cart_html}}<\/div>\r\n\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t<\/div>"}};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/ziss/assets/js/frontend.js' id='ziss-frontend-js'></script>
+<script  src='https://www.google.com/recaptcha/api.js?render=6LcR8b8UAAAAAFbbiXNxWsUOQeOU6W6DH_blNuh0' id='google-recaptcha-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LcR8b8UAAAAAFbbiXNxWsUOQeOU6W6DH_blNuh0","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js' id='wpcf7-recaptcha-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js' id='wpb_composer_front_js-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js' id='vc_jquery_skrollr_js-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js' id='vc_waypoints-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js' id='zoom-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js' id='photoswipe-js'></script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js' id='photoswipe-ui-default-js'></script>
+<script type='text/javascript' id='wc-single-product-js-extra'>
+/* <![CDATA[ */
+var wc_single_product_params = {"i18n_required_rating_text":"Por favor elige una puntuaci\u00f3n","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+/* ]]> */
+</script>
+<script  src='https://criaderolusitania.com/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js' id='wc-single-product-js'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.85354685783386 seconds, on 01-11-22 7:06:29 --><!-- via php -->
